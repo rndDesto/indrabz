@@ -1,6 +1,7 @@
 import SCSS from './style/index.scss';
 import 'jquery';
-// import './contohJquery';
+import './js/static';
+import './contohJquery';
 // import * as getNameExport from './contohExport';
 // import warnaBody from './fungsiJquery';
 // const getNameRequire = require('./contohRequire');
