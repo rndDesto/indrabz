@@ -1,6 +1,7 @@
-import SCSS from './style/index.scss';
+import mainstyle from './style/index.sass';
 import 'jquery';
 import './js/static';
+import './js/swiper';
 import './contohJquery';
 // import * as getNameExport from './contohExport';
 // import warnaBody from './fungsiJquery';

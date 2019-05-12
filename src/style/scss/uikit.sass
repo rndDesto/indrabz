@@ -1,10 +1,6 @@
 @import 'mixin.sass'
 
-.box
-    width: 100px
-    background: green
-    &.active
-        background: yellow
+
 body
     margin: 0
     font-family: 'Nunito', sans-serif
@@ -25,6 +21,56 @@ body
 img
     vertical-align: middle
     border-style: none
+img.contain
+    object-fit: contain
+img.cover
+    object-fit: cover
+
+   
+a.link, .link
+    color: #4168B8
+    font-size: 13px
+    font-weight: 400
+    letter-spacing: 0.2px
+.text-right
+    text-align: right
+.text-left
+    text-align: left
+.text-center
+    text-align: center
+.text-justify
+    text-align: justify
+.bold400
+    font-weight: 400
+.bold500
+    font-weight: 500
+.bold600
+    font-weight: 600
+.bold700
+    font-weight: 700
+
+    
+.ovh
+    overflow: hidden
+    display: block
+    clear: both
+    position: relative
+.bg-white
+    background-color: #ffffff
+
+.pt20
+    padding-top:20px !important
+.pb20
+    padding-bottom:20px !important
+.mt20
+    margin-top:20px !important
+.plr10
+    padding: 0 10px
+.heading-1
+    color: #0F1019
+    font-size: 16px
+    font-weight: 700
+    letter-spacing: 0.4px
 
 .form-control
     display: block
@@ -45,7 +91,6 @@ img
     background-color: #e9ecef
     opacity: 1
 
-
 .btn
     // display: inline-block
     font-weight: 400
@@ -65,6 +110,9 @@ img
         @include btn-primary
     &.biz-secondary
         @include btn-secondary
+    &.btn-center
+        width: 50%
+        margin: auto
 
 .biz-card
     border-radius: 10pt
@@ -80,6 +128,75 @@ img
         img
             width: 100%
             object-fit: cover
-        
+        .biz-card-label
+            background-color: rgba(82, 82, 82, 0.7)
+            padding: 5px 20px
+            border-radius: 30px
+            color: #ffffff
+            position: absolute
+            top: 5px
+            right: 5px
+            font-size: 14px
     .biz-card-body
         padding: 20px
+        .biz-caption-default
+           color: #6D6D6D
+           font-size: 14px
+           letter-spacing: 0.18px
+        .biz-caption-secondary
+           color: #304B82
+           font-size: 14px
+           letter-spacing: 0.18px
+    .card-separator
+        border-bottom: 1px solid #EEEEEE
+        padding-bottom: 15px
+
+.bisnis-list
+    max-width: 100%
+    margin: auto
+    background-color: #ffffff
+    position: relative
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14)
+    border-radius: 4px
+    padding: 20px
+    .bisnis-logo
+        width: 100px
+        line-height: 90px
+        margin: auto
+.bisnis-text
+    padding-top: 10px
+    padding-bottom: 20px
+    .bisnis-caption
+        font-size: 14px
+        color: #0F1019
+        letter-spacing: 0.2px
+        font-weight: 600
+        margin-bottom: 5px
+    .bisnis-category
+        font-size: 12px
+        color: #6D6D6D
+        letter-spacing: 0.2px
+        font-weight: 400
+
+
+.pbWrap
+  position: relative
+  height: 15px
+  border-radius: 3px
+  background: #EAEAEA
+  overflow: hidden
+
+.pbProgress
+  height: 100%
+  border-radius: 3px
+  background-color: #4168B8
+
+.pbText 
+  position: relative
+  top: -24px
+  left: 45%
+  color: #000000
+  font-size: 15px
+  font-style: italic
+  font-weight: bold
+

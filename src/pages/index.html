@@ -4,45 +4,295 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../bundle/main.css">
+    
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header id="temp-header">
-        <cmp-header></cmp-header>
+        <div class="container-fluid header-container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="header-menu">
+                        <img class="img-fluid" src="../images/header_menu.png" alt="share biz">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="header-logo">
+                        <img class="img-fluid" src="../images/header_logo.png" alt="share biz">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="header-profil">
+                        <img class="img-fluid" src="../images/header_profil.png" alt="share biz">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </header>
-    <p>as dihasidh oiash di</p>
-    <div id="user">
-        <div v-for="user in msg" class="box" :class="user.active ? 'active':''" @click="hanndlerActive(user)">
-            <p>{{user.nama}} - {{user.umur}}</p>
-            <img :src="user.photo" alt="">
+    <!-- <div class="row">
+        <div class="main-banner">
+            <div class="banner-img">
+                <img class="img-fluid" src="../images/main_banner_mobile.png" alt="">
+            </div>
+        </div>
+    </div> -->
+    <div class="container-fluid bg-white pt20" id="main-home">
+            <!-- Start Home Saldo -->
+            <div class="biz-card ovh saldo-container">
+                <div class="home-dompet">
+                    <img class="img-fluid" src="../images/home_dompet.png" alt="share biz">
+                </div>
+                <div class="home-saldo">
+                        <div class="saldo-caption">Saldo B-Wallet </div>
+                        <div class="saldo-digit">Rp 1.000.000.000</div>
+                </div>
+                <div class="home-saldotbtn">
+                    <div class="btn biz-secondary">
+                        Isi Saldo
+                    </div>
+                </div>
+            </div>
+            <!-- End Home Saldo -->
+            <!-- Start Home service -->
+            <div class="home-service-container">
+                <div class="row">
+                        <div class="col-3">
+                            <div class="service-list">
+                                <div class="service-img">
+                                    <a href="#">
+                                        <img class="img-fluid" src="../images/icon_rumah.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="service-caption">
+                                Bisnis Saya
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="service-list">
+                                <div class="service-img">
+                                    <img class="img-fluid" src="../images/icon_dollar.png" alt="">
+                                </div>
+                            </div>
+                            <div class="service-caption">
+                                Riwayat Pembelian
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="service-list">
+                                <div class="service-img">
+                                    <img class="img-fluid" src="../images/icon_gift.png" alt="">
+                                </div>
+                            </div>
+                            <div class="service-caption">
+                                Tarik Dana
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="service-list">
+                                <div class="service-img">
+                                    <img class="img-fluid" src="../images/icon_profil.png" alt="">
+                                </div>
+                            </div>
+                            <div class="service-caption">
+                                Profil Saya 
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!-- End service Menu -->
+    </div>
+
+    <!-- start ongoing service -->
+    <div id="service-ongoing" class="bg-white">
+        <div class="container-fluid mt20">
+            <div class="row pt20">
+                    <div class="col-8">
+                        <h3 class="heading-1">Sedang Berlangsung</h3>
+                    </div>
+                    <div class="col-4 text-right">
+                        <a href="#" class="link">Lihat Semua</a>
+                    </div>
+            </div>
+        </div>
+        <div class="service-slide">
+            <div class="card-service">
+                <div class="biz-card card-service-list">
+                    <div class="biz-card-thumb">
+                        <a href="#"><img class="img-fluid" src="../images/dummy_sederhana.jpg" alt="share biz"></a>
+                        <div class="biz-card-label">
+                            30 hari
+                        </div>
+                    </div>
+                    <div class="biz-card-body">
+                        <div class="card-separator">
+                            <div class="biz-caption-secondary bold600">Nasi Kapau by Padang Sederhana Lintau 88</div>
+                            <div class="biz-caption-default">Restoran Padang</div>
+                        </div>
+                        <div class="bar-fund">
+                            <div class="biz-caption-default pb20">Restoran Padang</div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="pbWrap">
+                                        <div class="pbProgress" style="width:10%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="pb-text">
+                                        10%
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="investor">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="biz-caption-default">Dana yang dibutuhkan</div>
+                                    <div class="investor-text">Restoran Padang</div>
+                                </div>
+                                <div class="col-4 text-right">
+                                    <div class="biz-caption-default">Investor</div>
+                                    <div class="investor-text">22 Orang</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-service">
+                    <div class="biz-card card-service-list">
+                        <div class="biz-card-thumb">
+                            <img class="img-fluid" src="../images/dummy_sederhana.jpg" alt="share biz">
+                        </div>
+                    </div>
+                </div>
+            
         </div>
     </div>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="btn biz-secondary">button</div>
-            </div>
-            <div class="col">
-                <div class="btn biz-default">button</div>
-            </div>
-        </div>
-        <div class="biz-card">
-            <div class="biz-card-thumb">
-                <img class="img-fluid" src="../images/paris.jpg" alt="">
-            </div>
-            <div class="biz-card-body">
-                <p>as djopsj dpoasjd p</p>
-            </div>
-        </div>
-      </div>
+    <!-- end ongoing service -->
 
-    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" readonly>
-    
+    <!-- start ongoing service -->
+    <div id="service-opened" class="bg-white">
+        <div class="container-fluid mt20">
+            <div class="row pt20">
+                    <div class="col">
+                        <h3 class="heading-1">Bisnis yang bisa dibuka</h3>
+                    </div>
+            </div>
+        </div>
+        <div class="container-fluid mt20">
+            <div class="row">
+                <div class="col-6">
+                    <div class="bisnis-list">
+                        <div class="bisnis-logo">
+                            <img class="img-fluid" src="../images/bisnis-sederhana.png" alt="share biz">
+                        </div>
+                    </div>
+                    <div class="bisnis-text ">
+                        <div class="bisnis-caption">Nasi Kapau by Padang Sederhanas</div>
+                        <div class="bisnis-category">Restoran Padang</div> 
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="bisnis-list">
+                        <div class="bisnis-logo">
+                            <img class="img-fluid" src="../images/bisnis-sederhana.png" alt="share biz">
+                        </div>
+                    </div>
+                    <div class="bisnis-text ">
+                        <div class="bisnis-caption">Nasi Kapau by Padang Sederhanas</div>
+                        <div class="bisnis-category">Restoran Padang</div> 
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="bisnis-list">
+                        <div class="bisnis-logo">
+                            <img class="img-fluid" src="../images/bisnis-sederhana.png" alt="share biz">
+                        </div>
+                    </div>
+                    <div class="bisnis-text ">
+                        <div class="bisnis-caption">Nasi Kapau by Padang Sederhanas</div>
+                        <div class="bisnis-category">Restoran Padang</div> 
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="bisnis-list">
+                        <div class="bisnis-logo">
+                            <img class="img-fluid" src="../images/bisnis-sederhana.png" alt="share biz">
+                        </div>
+                    </div>
+                    <div class="bisnis-text ">
+                        <div class="bisnis-caption">Nasi Kapau by Padang Sederhanas</div>
+                        <div class="bisnis-category">Restoran Padang</div> 
+                    </div>
+                </div>
+            </div>
+            <div class="row mt20 pb20">
+                <div class="btn biz-default btn-center">
+                    Lihat Lainnya
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end ongoing service -->
+
+    <!-- start ongoing insight -->
+    <div id="service-insight" class="bg-white">
+            <div class="container-fluid mt20">
+                <div class="row pt20">
+                        <div class="col-8">
+                            <h3 class="heading-1">Bizshare Insight</h3>
+                        </div>
+                        <div class="col-4 text-right">
+                            <a href="#" class="link">Lihat Semua</a>
+                        </div>
+                </div>
+            </div>
+            <div class="service-slide">
+                <div class="card-service">
+                    <div class="biz-card card-service-list">
+                        <div class="biz-card-thumb">
+                            <a href="#"><img class="img-fluid" src="../images/dummy_sederhana.jpg" alt="share biz"></a>
+                        </div>
+                        <div class="biz-card-body">
+                            <div>
+                                <div class="biz-caption-defaul">Mindset, Investasi</div>
+                                <div class="biz-caption-default bold600">8 Strategi Rahasia Yang Dilakukan oleh Warren Buffet Saat Berinvestasi</div>
+                            </div>
+                            <div class="bar-fund">
+                                <div class="row">
+                                    <div class="col-10">
+                                        selengkapnya
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="pb-text">
+                                           >
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end ongoing insight -->
+
+
+
+
+
     <footer id="temp-footer">
-        <cmp-footer></cmp-footer>
+        <div class="container-fluid footer-container">
+            <p>PT Bizhare Indonesia</p>
+            <p>Menara By Kibar, Jl. Raden Saleh Raya No.46A, RT.1/RW.2, Cikini, Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330 <br> 0812-8269-5558 <br> info@bizhare.id</p>
+        </div>
     </footer>
     <script src="../../bundle/main.bundle.js"></script>
 </body>

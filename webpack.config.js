@@ -81,6 +81,14 @@ module.exports = {
     port: 8200,
     stats:'errors-only'
   },
+  devServer: {
+    contentBase: 'bundle/', // Relative directory for base of server
+    publicPath: '/', // Live-reload
+    inline: true,
+    port: process.env.PORT || 8200, // Port Number
+    host: 'localhost', // Change to '0.0.0.0' for external facing server
+    historyApiFallback: true,
+  },
   plugins: [
     // ExtractCSS,
     // ExtractSASS,

@@ -15,3 +15,7 @@ var footer = new Vue({
     el:'#temp-footer',
 })
 
+
+var serviceOngoing= new Vue({
+    el:'#service-ongoing',
+})
