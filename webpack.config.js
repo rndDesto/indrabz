@@ -76,11 +76,6 @@ module.exports = {
       // }
     ]
   },
-  devServer:{
-    contentBase: path.join(__dirname, 'dist'),
-    port: 8200,
-    stats:'errors-only'
-  },
   devServer: {
     contentBase: 'bundle/', // Relative directory for base of server
     publicPath: '/', // Live-reload
@@ -93,7 +88,8 @@ module.exports = {
     // ExtractCSS,
     // ExtractSASS,
     new MiniCssExtractPlugin({
-      filename: "[name].css"
+      filename: "[name].css",
+      chunkFilename: '[id].css',
     }),
     new webpack.ProvidePlugin({
       $: "jquery",

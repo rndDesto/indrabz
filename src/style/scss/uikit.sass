@@ -32,6 +32,32 @@ a.link, .link
     font-size: 13px
     font-weight: 400
     letter-spacing: 0.2px
+a.dblue, .dblue
+    color: #304B82
+    font-size: 13px
+    font-weight: 400
+    letter-spacing: 0.2px
+a.green, .green
+    color: #3D8230
+    font-size: 13px
+    font-weight: 400
+    letter-spacing: 0.2px
+a.red, .red
+    color: #DA3434
+    font-size: 13px
+    font-weight: 400
+    letter-spacing: 0.2px
+.a.white, .white
+    color: #ffffff
+    font-weight: 400
+    letter-spacing: 0.2px
+.a.purple, .purple
+    color: #543082
+    font-weight: 400
+    letter-spacing: 0.2px
+
+.fs12
+    font-size: 12px !important
 .text-right
     text-align: right
 .text-left
@@ -48,6 +74,17 @@ a.link, .link
     font-weight: 600
 .bold700
     font-weight: 700
+.title-caption-main
+    font-size: 28px
+    font-weight: 700
+    letter-spacing: 0.4px
+    text-align: center
+.title-caption-sub
+    font-size: 20px
+    font-weight: 400
+    letter-spacing: 0.4px
+    text-align: center
+
 
     
 .ovh
@@ -57,13 +94,27 @@ a.link, .link
     position: relative
 .bg-white
     background-color: #ffffff
+.bg-blue-gradient
+    background: rgb(94,130,184)
+    background: linear-gradient(180deg, rgba(94,130,184,1) 0%, rgba(48,75,130,1) 80%)
 
+.pt10
+    padding-top:10px !important
 .pt20
     padding-top:20px !important
+.pb10
+    padding-bottom:10px !important
 .pb20
     padding-bottom:20px !important
+.mt10
+    margin-top:10px !important
 .mt20
     margin-top:20px !important
+.mb20
+    margin-bottom:20px !important
+.mb10
+    margin-bottom:10px !important
+
 .plr10
     padding: 0 10px
 .heading-1
@@ -92,7 +143,6 @@ a.link, .link
     opacity: 1
 
 .btn
-    // display: inline-block
     font-weight: 400
     text-align: center
     white-space: nowrap
@@ -105,10 +155,10 @@ a.link, .link
     border-radius: 8px
     text-transform: capitalize
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
-    &.biz-default
+    &.biz-default, a.biz-default
         color: #fff
         @include btn-primary
-    &.biz-secondary
+    &.biz-secondary, a.biz-secondary
         @include btn-secondary
     &.btn-center
         width: 50%
@@ -138,7 +188,7 @@ a.link, .link
             right: 5px
             font-size: 14px
     .biz-card-body
-        padding: 20px
+        padding: 5px 20px 20px
         .biz-caption-default
            color: #6D6D6D
            font-size: 14px
@@ -150,6 +200,18 @@ a.link, .link
     .card-separator
         border-bottom: 1px solid #EEEEEE
         padding-bottom: 15px
+    .card-logo-box
+        margin: auto
+        background-color: #ffffff
+        position: relative
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14)
+        border-radius: 4px
+        padding: 5px
+        .card-logo-item
+            width: 60px
+            line-height: 60px
+            margin: auto
+    .card-caption-box
 
 .bisnis-list
     max-width: 100%
@@ -163,6 +225,14 @@ a.link, .link
         width: 100px
         line-height: 90px
         margin: auto
+    &.more-load
+        padding: 15px
+        height: 140px
+        .more-caption
+            font-size: 14px
+            color: #304B82
+            font-weight: 600
+            text-align: center
 .bisnis-text
     padding-top: 10px
     padding-bottom: 20px

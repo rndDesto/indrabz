@@ -1,7 +1,8 @@
 import Swiper from 'swiper'
 
-var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true
-  })
+var swiper = new Swiper('.main-banner', {
+  pagination: {
+    el: '.main-banner-pagination'
+  },
+  loop: true
+});
