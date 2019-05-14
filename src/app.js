@@ -3,6 +3,8 @@ import mainstyle from './style/index.sass';
 import 'jquery';
 import './js/static';
 import './js/home';
+import './js/faq';
+import './js/tentang';
 import './js/swiper';
 import './contohJquery';
 // import * as getNameExport from './contohExport';

@@ -1,0 +1,23 @@
+.faq-container
+    margin-bottom: 10px
+    .faq-title
+        padding-top: 15px
+        h2
+            color: #0F1019
+            font-size: 18px
+        .faq-arrow
+            text-align: right
+            transition: 0.2s ease
+    .faq-text
+        color: #6D6D6D
+        max-height: 0
+        overflow: hidden
+        transition: max-height 0.2s ease
+        
+    &.active
+        .faq-arrow
+            transform: rotate(90deg)
+        .faq-text
+            padding-top: 15px
+            overflow-y: auto
+            max-height: 500px

@@ -148,3 +148,55 @@ var skemaBisnis= new Vue({
         ]
     }
 })
+
+var investOngoing= new Vue({
+    el:'#invest-ongoing',
+    data:{
+        investOngoing : [
+            {
+                "title": "Nasi Kapau by Padang Sederhana Lintau 88",
+                "sub_title":"Masakan Padang",
+                "images":"../images/bisnis-sederhana.png",
+                "reqiure_fund":"2.000.000.000",
+                "investor_count":22,
+                "progress": 10,
+                "batas_fund": 20,
+                "tersisa": null
+            },
+            {
+                "title": "Nasi Kapau by Padang Sederhana Lintau 88",
+                "sub_title":"Masakan Padang",
+                "images":"../images/bisnis-sederhana.png",
+                "reqiure_fund":"2.000.000.000",
+                "investor_count":22,
+                "progress": 40,
+                "batas_fund": 20,
+                "tersisa": 2
+            },
+            {
+                "title": "Nasi Kapau by Padang Sederhana Lintau 88",
+                "sub_title":"Masakan Padang",
+                "images":"../images/bisnis-sederhana.png",
+                "reqiure_fund":"2.000.000.000",
+                "investor_count":22,
+                "progress": 69,
+                "batas_fund": 20,
+                "tersisa": null
+            },
+            {
+                "title": "Nasi Kapau by Padang Sederhana Lintau 88",
+                "sub_title":"Masakan Padang",
+                "images":"../images/bisnis-sederhana.png",
+                "reqiure_fund":"2.000.000.000",
+                "investor_count":22,
+                "progress": 53,
+                "batas_fund": 34,
+                "tersisa": 2
+            }
+        ]
+    }
+})
+
+
+
+invest-ongoing

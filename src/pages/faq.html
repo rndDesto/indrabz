@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../bundle/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header id="temp-header">
+        <cmp-header></cmp-header>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Nav Service -->
+    <div id="nav-menu">
+        <cmp-navservice></cmp-navservice>
+    </div>
+    <!-- Start Nav Service -->
+
+    <!-- Start Loggedin Service -->
+    <div id="nav-logged-in">
+        <cmp-navloggedin></cmp-navloggedin>
+    </div>
+    <!-- Start Loggedin Service -->
+
+    <!-- Start Faq -->
+    <div id="faq" class="container-fluid">
+        <div class="biz-card faq-container" v-for="item in faq">
+            <div class="biz-card-body">
+                <div class="faq-title">
+                    <div class="row">
+                        <div class="col-10">
+                            <h2>{{item.title}}</h2>
+                        </div>
+                        <div class="col-2">
+                            <div class="faq-arrow">
+                                <i class="fa fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-text">{{item.text}}</div> 
+            </div> 
+        </div>  
+    </div>
+    <!-- End Faq -->
+
+    <footer id="temp-footer">
+        <cmp-footer></cmp-footer>
+    </footer>
+    <script src="../../bundle/main.bundle.js"></script>
+</body>
+</html>

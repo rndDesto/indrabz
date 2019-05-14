@@ -12,28 +12,23 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Start Header -->
     <header id="temp-header">
-        <div class="container-fluid header-container">
-            <div class="row">
-                <div class="col-2">
-                    <div class="header-menu">
-                        <img class="img-fluid" src="../images/header_menu.png" alt="share biz">
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div class="header-logo">
-                        <img class="img-fluid" src="../images/header_logo.png" alt="share biz">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="header-profil">
-                        <img class="img-fluid" src="../images/header_profil.png" alt="share biz">
-                    </div>
-                </div>
-                
-            </div>
-        </div>
+        <cmp-header></cmp-header>
     </header>
+    <!-- End Header -->
+
+    <!-- Start Nav Service -->
+    <div id="nav-menu">
+        <cmp-navservice></cmp-navservice>
+    </div>
+    <!-- Start Nav Service -->
+
+    <!-- Start Loggedin Service -->
+    <div id="nav-logged-in">
+        <cmp-navloggedin></cmp-navloggedin>
+    </div>
+    <!-- Start Loggedin Service -->
 
     <!-- Start Main Slider -->
     <div class="swiper-container main-banner" id="main-banner">
