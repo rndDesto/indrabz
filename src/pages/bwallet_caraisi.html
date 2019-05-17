@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../bundle/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-white-alt">
+    <!-- Start Header -->
+    <header id="temp-header">
+        <div class="container-fluid header-container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="header-menu">
+                        <img class="img-fluid" src="../images/header_menu.png" alt="share biz">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="header-caption">
+                        <h1>Saldo Bizhare</h1>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="header-profil">
+                        <img class="img-fluid" src="../images/header_profil.png" alt="share biz">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Nav Service -->
+    <div id="nav-menu">
+        <cmp-navservice></cmp-navservice>
+    </div>
+    <!-- Start Nav Service -->
+
+    <!-- Start Loggedin Service -->
+    <div id="nav-logged-in">
+        <cmp-navloggedin></cmp-navloggedin>
+    </div>
+    <!-- Start Loggedin Service -->
+
+    <!-- Start Bwallet Logo -->
+   <div class="bwallet-head">
+       <div class="bwallet-logo">
+            <img src="../images/home_dompet.png" alt="">
+       </div>
+   </div>
+   <div class="bwallet-saldo">
+        <div>Saldo</div>
+        <div class="bold600 fs20">Rp 10.000.000</div>
+        <div class="bwallet-ubah-pass">
+            <i class="fa fa-pencil"></i> UBAH PASSWORD
+        </div>
+   </div>
+   <!-- End Bwallet Logo -->
+
+   <!-- Start BWallet Nav -->
+   <div class="bwallet-nav">
+       <div class="service-slide">
+           <ul>
+               <li><a href="#" class="active">PETUNJUK PENGISIAN</a></li>
+               <li><a href="">RIWAYAT TRANSAKSI</a></li>
+               <li><a href="">RIWAYAT TRANSAKSI</a></li>
+               <li><a href="">RIWAYAT TRANSAKSI</a></li>
+           </ul>
+       </div>
+       <div class="slide-prev d-none"><i class="fa fa-angle-left"></i></div>
+       <div class="slide-next"><i class="fa fa-angle-right"></i></div>
+   </div>
+   <!-- End BWallet Nav -->
+
+   <!-- Start Bwallet Bank -->
+   <div id="bwallet-bank" class="bwallet-bank container-fluid">
+       <div class="bwallet-kembali">
+            <i class="fa fa-arrow-left"></i> ATM / Bank Transfer
+       </div>
+       <div class="biz-card bwallet-card" v-for="item in bwalletBank">
+            <div class="row">
+                <div class="col-10">
+                    <div class="bwallet-icon-bank">
+                        <img class="img-fluid" :src="item.images" :alt="item.title">
+                    </div>
+                    <div class="bwallet-bank-name">
+                        {{item.title}}
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="bwallet-arrow">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bwallet-cara-bayar">
+                <p>Cara Pembayaaran</p>
+                <ol>
+                    <li>Pada menu utama, pilih <span class="bold600">Transaksi Lainnya.</span></li>
+                    <li>Pilih Pembayaran.</li>
+                    <li>Pilih Pembayaran Lainnya.</li>
+                    <li>Pilih Virtual Account.</li>
+                    <li>Masukkan 16 digit No. Virtual Account yang dituju, lalu tekan Benar.</li>
+                    <li>Pada halaman konfirmasi transfer akan muncul jumlah yang dibayarkan, nomor rekening, & nama Merchant. Jika informasi telah sesuai tekan Benar.</li>
+                    <li>Pilih rekening pembayaran Anda dan tekan Benar.</li>
+                </ol>
+            </div>
+       </div>
+   </div>
+   <!-- End Bwallet Bank -->
+
+
+    <footer id="temp-footer">
+        <cmp-footer></cmp-footer>
+    </footer>
+    <script src="../../bundle/main.bundle.js"></script>
+</body>
+</html>

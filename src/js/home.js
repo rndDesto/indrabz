@@ -196,7 +196,3 @@ var investOngoing= new Vue({
         ]
     }
 })
-
-
-
-invest-ongoing

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../bundle/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-white-alt">
+    <!-- Start Header -->
+    <header id="temp-header">
+        <div class="container-fluid header-container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="header-menu">
+                        <img class="img-fluid" src="../images/header_menu.png" alt="share biz">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="header-caption">
+                        <h1>Saldo Bizhare</h1>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="header-profil">
+                        <img class="img-fluid" src="../images/header_profil.png" alt="share biz">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Nav Service -->
+    <div id="nav-menu">
+        <cmp-navservice></cmp-navservice>
+    </div>
+    <!-- Start Nav Service -->
+
+    <!-- Start Loggedin Service -->
+    <div id="nav-logged-in">
+        <cmp-navloggedin></cmp-navloggedin>
+    </div>
+    <!-- Start Loggedin Service -->
+
+    <!-- Start Bwallet Logo -->
+   <div class="bwallet-head">
+       <div class="bwallet-logo">
+            <img src="../images/home_dompet.png" alt="">
+       </div>
+   </div>
+   <div class="bwallet-saldo">
+        <div>Saldo</div>
+        <div class="bold600 fs20">Rp 10.000.000</div>
+        <div class="bwallet-ubah-pass">
+            <i class="fa fa-pencil"></i> UBAH PASSWORD
+        </div>
+   </div>
+   <!-- End Bwallet Logo -->
+
+   <!-- Start BWallet Nav -->
+   <div class="bwallet-nav">
+       <div class="service-slide">
+           <ul>
+               <li><a href="#" class="active">PETUNJUK PENGISIAN</a></li>
+               <li><a href="">RIWAYAT TRANSAKSI</a></li>
+               <li><a href="">RIWAYAT TRANSAKSI</a></li>
+               <li><a href="">RIWAYAT TRANSAKSI</a></li>
+           </ul>
+       </div>
+       <div class="slide-prev d-none"><i class="fa fa-angle-left"></i></div>
+       <div class="slide-next"><i class="fa fa-angle-right"></i></div>
+   </div>
+   <!-- End BWallet Nav -->
+
+   <!-- Start Bwallet Bank -->
+   <div class="container-fluid bwallet-token bg-white">
+       <div class="bwallet-holder">
+            <div class="row">
+                <div class="col-4">
+                    <div class="holder-logo">
+                        <img class="img-fluid" src="../images/bwallet_bca.png" alt="">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="holder-account">
+                        <p>542119217</p>
+                        <p>an. Dadang Suherman</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div class="bwallet-nominal">
+           <div>Masukan Nominal</div>
+           <div class="bwallet-input-nominal">
+               <input type="text" class="form-control" placeholder="0">
+               <div class="currency">Rp.</div>
+           </div>
+           <div class="minta-token pb20">
+               <button class="btn biz-default btn-full">Minta Token</button>
+           </div>
+       </div>
+       <div class="bwallet-auth d-none">
+           <div class="auth-token">
+               <label for="">Token</label>
+               <input type="text" class="form-control" placeholder="Masukan token disini">
+           </div>
+           <div class="auth-token">
+                <label for="">Password</label>
+                <div class="form-icon form-icon-right">
+                    <input type="password" class="form-control" placeholder="Masukan password">
+                    <i class="fa fa-eye"></i>
+                </div>
+            </div>
+            <div class="minta-token pb20">
+                <button class="btn biz-default btn-full">Tarik Dana</button>
+            </div>
+       </div>
+   </div>
+   <!-- End Bwallet Bank -->
+
+   <!-- Start Bwallet Info -->
+   <div class="container-fluid">
+    <div class="bwallet-info">
+        <h3>Informasi Penting</h3>
+        <ul>
+            <li>Isi saldo dengan menggunakan metode pembayaran Transfer Bank manual akan di proses kurang lebih 1 x 24 jam.</li>
+        </ul>
+        <h3>Ada Kendala? Hubungi Kami</h3>
+        <p>021 - 72219190<br>Senin - Jumat | 08.00 - 18.00<br><br>Email: support@bizhare.id</p>
+    </div>   
+   </div>
+   <!-- End Bwallet Info -->
+
+
+    <footer id="temp-footer">
+        <cmp-footer></cmp-footer>
+    </footer>
+    <script src="../../bundle/main.bundle.js"></script>
+</body>
+</html>

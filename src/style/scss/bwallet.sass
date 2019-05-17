@@ -1,0 +1,146 @@
+.bwallet-head
+    width: 70px
+    background-color: #ffffff
+    position: relative
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14)
+    border-radius: 35%
+    padding: 5px
+    margin: 80px auto 20px auto
+    
+    .bwallet-logo
+        line-height: 60px
+        margin: auto
+        text-align: center
+.bwallet-saldo
+    text-align: center
+    .bwallet-ubah-pass
+        font-size: 12px
+        color: #304B82
+        font-weight: 600
+        margin-top: 10px
+        i  
+            color: #ffffff
+            background-color: #304B82
+            padding: 5px
+            border-radius: 50%
+            font-size: 10px
+            margin-right: 5px
+
+.bwallet-nav
+    position: relative
+    ul
+        display: table
+        padding: 0
+        margin: 20px 0
+    li
+        display: table-cell
+        list-style: none        
+        a
+            padding: 10px 15px
+            background-color: #fff
+            border-radius: 50px
+            margin: 0 5px
+            color: #6D6D6D
+            font-size: 14px
+            &.active
+                background-color: #4168B8
+                color: #ffffff
+        &:first-child
+            a
+                margin-left: 0
+
+.bwallet-bank
+    .bwallet-kembali
+        width: 80%
+        background-color: #ffffff
+        color: #304B82
+        padding: 10px 15px
+        border-radius: 50px
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14)
+        i
+            padding-right: 10px
+    .bwallet-card
+        padding: 10px 0
+        margin: 10px 0
+        .bwallet-icon-bank
+            float: left
+            width: 90px
+        .bwallet-bank-name
+            float: left
+            max-width: 150px
+            line-height: 45px
+            padding-left: 10px
+            font-size: 12px
+            font-weight: 500
+        .bwallet-arrow
+            text-align: right
+            padding-right: 10px
+            line-height: 45px
+        .bwallet-cara-bayar
+            padding: 0 10px
+            margin-top: 20px
+            color: #6D6D6D
+            max-height: 0
+            overflow: hidden
+            display: none
+            p
+                font-weight: 600
+        &.active
+            .bwallet-cara-bayar
+                display: block
+                overflow-y: auto
+                max-height: 500px
+            .bwallet-arrow
+                transform: rotate(90deg) translateY(10px)
+
+.bwallet-token
+    .bwallet-holder
+        padding: 10px
+        border-bottom: 1px solid #ededed
+        .holder-logo
+            max-width: 100px
+            margin: auto
+            line-height: 60px
+        .holder-account
+            p
+                margin-bottom: 0
+    .bwallet-nominal
+        padding-top: 20px
+        .bwallet-input-nominal
+            position: relative
+            padding-bottom: 20px
+            color: #7b7b7b
+            input
+                padding-left: 45px
+                border: none
+                border-bottom: 1px solid #ededed
+                font-size: 25px
+                font-weight: 600
+                color: #7b7b7b
+            .currency
+                position: absolute
+                top: 3px
+                font-weight: 600
+                font-size: 26px
+.auth-token
+    margin-bottom: 20px
+
+.bwallet-info
+    margin-top: 20px
+    padding: 20px
+    background-color: #F7FAFF
+    border: 1px dashed #304B82
+    border-radius: 4px
+.bwallet-coins
+    .bwallet-coin-thumb
+        max-width: 80px
+        margin: auto
+        background-color: #ffffff
+        position: relative
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14)
+        border-radius: 20px
+        .bwallet-coin-img
+            width: 80px
+            line-height: 80px
+            margin: auto
+            text-align: center

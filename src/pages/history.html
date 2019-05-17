@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../bundle/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header id="temp-header">
+        <div class="container-fluid header-container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="header-menu">
+                        <img class="img-fluid" src="../images/header_menu.png" alt="share biz">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="header-caption">
+                        <h1>Riwayat Pembelian</h1>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="header-profil">
+                        <img class="img-fluid" src="../images/header_profil.png" alt="share biz">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Nav Service -->
+    <div id="nav-menu">
+        <cmp-navservice></cmp-navservice>
+    </div>
+    <!-- Start Nav Service -->
+
+    <!-- Start Loggedin Service -->
+    <div id="nav-logged-in">
+        <cmp-navloggedin></cmp-navloggedin>
+    </div>
+    <!-- Start Loggedin Service -->
+
+    <!-- Start Filter -->
+    <div class="container-fluid mt20 mb20">
+        <div class="row">
+            <div class="col-7">Filter Status</div>
+            <div class="col-5">
+                <div class="biz-filter">
+                    <select name="" id="" class="form-control">
+                        <option value="">Status</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Filter -->
+
+    <!-- Start History -->
+    <div id="history-page" class="container-fluid">
+        <div class="biz-card history-card" v-for="item in historyPage">
+            <div class="history-top history-pad">
+                <div class="row">
+                    <div class="col-6 history-left">
+                        No. Transaksi
+                    </div>
+                    <div class="col-6 history-right">
+                        Jumlah
+                    </div>
+                </div>
+            </div>
+            <div class="history-mid history-pad">
+                <div class="row">
+                    <div class="col-6 history-left bold600">
+                        {{item.nama}}
+                    </div>
+                    <div class="col-6 history-right">
+                        <template v-if="item.status == 1">
+                            <div class="biz-label label-success">
+                                Completed
+                            </div> 
+                        </template>
+                        <template v-if="item.status == 2">
+                            <div class="biz-label label-danger">
+                                Close
+                            </div> 
+                        </template>
+                        <template v-if="item.status == 3">
+                            <div class="biz-label">
+                                Refund
+                            </div> 
+                        </template>
+                    </div>
+                </div>
+            </div>
+            <div class="history-btm history-pad">
+                <div class="row">
+                    <div class="col-10 history-left">
+                        25 Januari 2019 | 22.59 WIB
+                    </div>
+                    <div class="col-2 history-right">
+                        <div class="history-arrow text-right">
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!-- End History -->
+
+    <!-- Start Paging -->
+    <div class="container-fluid">
+        <div class="biz-paging paging-center">
+            <ul>
+                <li><a href="" class="paging-link"><i class="fa fa-chevron-left"></i></a></li>
+                <li><a href="" class="paging-link active">1</a></li>
+                <li><a href="" class="paging-link">2</a></li>
+                <li><a href="" class="paging-link">3</a></li>
+                <li><a href="" class="paging-link"><i class="fa fa-chevron-right"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Paging -->
+
+    <footer id="temp-footer">
+        <cmp-footer></cmp-footer>
+    </footer>
+    <script src="../../bundle/main.bundle.js"></script>
+</body>
+</html>

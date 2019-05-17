@@ -48,10 +48,75 @@
         <div class="section-caption pt20">
             <p class="misi-text">Misi Kami</p>
             <h2 class="title-caption-main">Membantu Meningkatkan Perekonomian Indonesia </h2>
-            <p>Misi kami adalah membantu ekonomi di Indonesia bisa meningkat dengan lebih pesat Lorem ipsum dolor sit amet, no facer contentiones vituperatoribus vel, sit no mazim semper detraxit, veri quas utroque vix ex/p>
+            <p>Misi kami adalah membantu ekonomi di Indonesia bisa meningkat dengan lebih pesat Lorem ipsum dolor sit amet, no facer contentiones vituperatoribus vel, sit no mazim semper detraxit, veri quas utroque vix ex</p>
+        </div>
+    </div>
+    <div class="container-fluid pt20">
+        <div class="tentang-team">
+            <img class="img-fluid" src="../images/image_team.png" alt="">
+        </div>
+        <div class="section-caption pt20 text-center">
+            <h2 class="title-caption-main">Tentang Kami</h2>
+            <p>Bizhare.id  merupakan Platform investasi bisnis dan Pendanaan UKM, yang Mudahkan anda untuk bisa investasi di bisnis-bisnis yang sudah profitable atau membuka Bisnis Franchise Baru bersama teman-teman, dan dapat passive income dari hasil profit sharing bisnisnya secara berkala, tanpa modal besar sekalipun dan resikonya juga bisa diminimalisir. </p>
+            <p> Selain itu, anda juga bisa mangajukan penggalangan dana untuk ekspansi bisnis yang sudah berjalan dengan cepat, dengan sistem Equity crowdsharing, melalui platform kami.</p>
         </div>
     </div>
     <!-- End Misi Kami -->
+
+    <!-- Start Meet team -->
+    <div id="team" class="container-fluid pt20 pb20 bg-white">
+        <div class="section-caption pt20 text-center">
+            <h2 class="title-caption-main">Meet Our Leadership Team</h2>
+        </div>
+        <div class="meet-team" v-for="item in team">
+            <div class="team-thumb">
+                <img class="img-fluid" :src="item.images" :alt="item.nama">
+            </div>
+            <div class="team-name">
+                {{item.nama}}
+            </div>
+            <div class="team-title">
+                {{item.title}}
+            </div>
+        </div>
+    </div>
+    <!-- End Meet team -->
+
+    <!-- start ongoing insight -->
+    <div id="service-insight">
+        <div class="container-fluid mt20">
+            <div class="section-caption pt20 text-center">
+                <h2 class="title-caption-main">Bizhare Insight</h2>
+                <div>For more company news please  <a href="#">visit our blog</a> </div>
+            </div>
+        </div>
+        <div class="service-slide">
+            <div class="card-service" v-for="item in serviceInsight">
+                <div class="biz-card card-service-list">
+                    <div class="biz-card-thumb thumb-frame">
+                        <a href="#"><img class="img-fluid" :src="item.images" :alt="item.title"></a>
+                    </div>
+                    <div class="biz-card-body">
+                        <div>
+                            <div class="biz-caption-default pb10">{{item.category}}</div>
+                            <div class="bold600">{{item.title}}</div>
+                        </div>
+                        <div class="insight-more">
+                            <div class="row">
+                                <div class="col-10">
+                                    <a href="#">Selengkapnya</a>
+                                </div>
+                                <div class="col-2">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end ongoing insight -->
 
     <footer id="temp-footer">
         <cmp-footer></cmp-footer>

@@ -5,6 +5,8 @@ import './js/static';
 import './js/home';
 import './js/faq';
 import './js/tentang';
+import './js/history';
+import './js/bwallet';
 import './js/swiper';
 import './contohJquery';
 // import * as getNameExport from './contohExport';

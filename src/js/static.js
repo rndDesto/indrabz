@@ -230,8 +230,42 @@ $(document).ready(function(){
         $("#logged-in-service").removeClass('active');
     });
 
-    $(".faq-container").click(function(){
-        $(this).toggleClass('active')
+    $(".faq-container, .bwallet-card").click(function(){
+        $(this).toggleClass('active');
+    });
+
+    $('.minta-token').click(function(){
+        $(this).addClass('d-none');
+        $('.bwallet-auth').removeClass('d-none');
+    });
+
+    $('.bwallet-nav .service-slide').scroll( function() {
+        var navIndicator = $('.bwallet-nav .service-slide').scrollLeft();
+        var navWidth = $('.bwallet-nav .service-slide').outerWidth();
+        var navInside = $('.bwallet-nav .service-slide ul').outerWidth();
+        var navPrev = $('.bwallet-nav .slide-prev');
+        var navNext = $('.bwallet-nav .slide-next');
+        if ( navIndicator > navWidth) {
+            // alert('end!');
+            console.log("mantap")
+            navNext.addClass('d-none');
+        }
+        else if(navIndicator == 0){
+            navNext.removeClass('d-none');
+            navPrev.addClass('d-none');
+        }
+        else{
+            navPrev.removeClass('d-none');
+            navNext.removeClass('d-none');
+        }
+    });
+
+    $('.bwallet-ubah-pass').click(function(){
+        $('.ubah-pass-main').removeClass('d-none')
+    })
+
+    $('.minta-token-main').click(function(){
+        $('.ubah-pass-main-detail').removeClass('d-none')
     })
 
 })

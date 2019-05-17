@@ -31,30 +31,18 @@
     <!-- Start Loggedin Service -->
 
     <!-- Start Faq -->
-    <div id="faq" class="container-fluid">
-        <div class="faq-banner">
-            <img class="img-responsive" src="../images/faq.png" alt="">
+    <div id="not-found" class="container-fluid bg-white">
+        <div class="error-banner">
+            <img class="img-responsive" src="../images/404.png" alt="">
             <div class="section-caption">
-                <h2 class="title-caption-main">Hai, Ada yang bisa kami bantu?</h2>
-            </div>
-        </div>
-        <div class="biz-card faq-container" v-for="item in faq">
-            <div class="biz-card-body">
-                <div class="faq-title">
-                    <div class="row">
-                        <div class="col-10">
-                            <h2>{{item.title}}</h2>
-                        </div>
-                        <div class="col-2">
-                            <div class="faq-arrow">
-                                <i class="fa fa-chevron-right"></i>
-                            </div>
-                        </div>
-                    </div>
+                <h2 class="title-caption-main">Hmmmm… Sepertinya Anda Tersesat.</h2>
+                <p>Halaman yang anda tuju tidak ditemukan (error 404).</p>
+                <div class="row">
+                    <a href="#" class="btn biz-default btn-center">Kembali ke Home</a>
                 </div>
-                <div class="faq-text">{{item.text}}</div> 
-            </div> 
-        </div>  
+            </div>
+            
+        </div>
     </div>
     <!-- End Faq -->
 

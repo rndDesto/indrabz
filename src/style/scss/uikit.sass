@@ -8,7 +8,11 @@ body
     color: #0F1019
     text-align: left
     background-color: #FAFAFA
-
+.main-content
+    margin-top: 80px
+.img-responsive
+    width: 100%
+    height: auto
 .img-fluid
     max-width: 100%
     height: auto
@@ -34,30 +38,33 @@ a.link, .link
     letter-spacing: 0.2px
 a.dblue, .dblue
     color: #304B82
-    font-size: 13px
-    font-weight: 400
     letter-spacing: 0.2px
 a.green, .green
     color: #3D8230
-    font-size: 13px
-    font-weight: 400
     letter-spacing: 0.2px
 a.red, .red
     color: #DA3434
-    font-size: 13px
-    font-weight: 400
     letter-spacing: 0.2px
 .a.white, .white
     color: #ffffff
-    font-weight: 400
-    letter-spacing: 0.2px
 .a.purple, .purple
     color: #543082
-    font-weight: 400
     letter-spacing: 0.2px
+.a.yellow, .yellow
+    color: #EB9A1A
+.bg-gray
+    background-color: #F3F6F8
 
 .fs12
     font-size: 12px !important
+.fs14
+    font-size: 14px !important
+.fs16
+    font-size: 16px !important
+.fs18
+    font-size: 18px !important
+.fs20
+    font-size: 20px !important
 .text-right
     text-align: right
 .text-left
@@ -74,6 +81,8 @@ a.red, .red
     font-weight: 600
 .bold700
     font-weight: 700
+.break-all
+    word-break: break-all
 .title-caption-main
     font-size: 28px
     font-weight: 700
@@ -85,8 +94,6 @@ a.red, .red
     letter-spacing: 0.4px
     text-align: center
 
-
-    
 .ovh
     overflow: hidden
     display: block
@@ -94,6 +101,8 @@ a.red, .red
     position: relative
 .bg-white
     background-color: #ffffff
+.bg-white-alt
+    background-color: #F3F6F8
 .bg-blue-gradient
     background: rgb(94,130,184)
     background: linear-gradient(180deg, rgba(94,130,184,1) 0%, rgba(48,75,130,1) 80%)
@@ -122,6 +131,15 @@ a.red, .red
     font-size: 16px
     font-weight: 700
     letter-spacing: 0.4px
+
+.form-icon
+    position: relative
+    &.form-icon-right
+        i
+            position: absolute
+            top: 10px
+            right: 10px
+            color: #B1B1B1
 
 .form-control
     display: block
@@ -167,6 +185,8 @@ a.red, .red
         width: 100%
         display: block
 
+.biz-card-full
+     @include card-default
 .biz-card
     border-radius: 10px
     @include card-default
@@ -286,6 +306,28 @@ a.red, .red
         white-space: initial
         .card-service-list
             width: 95%
+.slide-prev
+    position: absolute
+    top: 37px
+    left: 5px
+    background-color: rgba(255, 255, 255, 0.7)
+    width: 30px
+    line-height: 30px
+    text-align: center
+    border-radius: 60px
+    font-size: 14px
+    color: #4168B8
+.slide-next
+    position: absolute
+    top: 37px
+    right: 5px
+    background-color: rgba(255, 255, 255, 0.7)
+    width: 30px
+    line-height: 30px
+    text-align: center
+    border-radius: 60px
+    font-size: 14px
+    color: #4168B8
 
 .section-caption
     color: #6D6D6D
@@ -315,3 +357,102 @@ a.red, .red
     font-style: italic
     font-weight: bold
 
+.biz-label
+    padding: 5px 10px
+    background-color: #E6E6F0
+    display: inline-flex
+    border-radius: 50px
+    color: #6D6D6D
+    &.label-success
+        color: #1A651A
+        background-color: #D3F7D3
+    &.label-danger
+        color: #DA3434
+        background-color: #FFC7C7
+    &.label-warning
+        color: #EB9A1A
+        background-color: #FFF4E1
+
+.history-card
+    margin-bottom: 20px
+    .history-pad
+        padding: 20px
+    .history-left
+        padding-right: 0
+    .history-right
+        padding-left: 0
+    .history-right
+        text-align: right
+    .history-top
+        color: #6D6D6D
+    .history-mid
+        background-color: #F3F6F8
+    .history-arrow
+        color: #ff9b00
+
+.biz-separator
+    border-bottom: 1px solid #EEEEEE
+    padding: 10px 0
+
+
+.biz-paging
+    display: flex
+    padding-left: 0
+    list-style: none
+    border-radius: .25rem
+    margin: 20px 0
+    &.paging-center
+        justify-content: center
+    ul
+        padding: 0
+        margin: 0
+        li
+            list-style: none
+            display: inline-flex
+            .paging-link
+                position: relative
+                display: block
+                padding: .5rem .75rem
+                border-radius: 4px
+                margin-left: -1px
+                line-height: 1.25
+                color: #0F1019
+                background-color: #fff
+                border: 1px solid #E6E6F0
+                &.active
+                    color: #fff
+                    background: rgb(94,130,184)
+                    background: linear-gradient(270deg, rgba(94,130,184,1) 0%, rgba(48,75,130,1) 80%)
+
+
+.biz-overlay
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(94, 130, 184, 0.5)
+    z-index: 11
+.biz-overlay-modal
+    height: 100%
+    position: relative
+    background-color: #fff
+    border-top-left-radius: 25px
+    border-top-right-radius: 25px
+    box-shadow: 0 0px 8px #797979
+    &.modal-btm-min60
+        bottom: -60%
+    &.modal-btm-min10
+        bottom: -10%
+    .biz-overlay-head
+        text-align: center
+        border-bottom: 1px solid #ededed
+        padding-bottom: 10px
+        padding-top: 20px
+        i
+            position: absolute
+            top: 20px
+            left: 25px
+    .biz-overlay-body
+        padding: 20px
+        overflow: auto
+        max-height: 80%
