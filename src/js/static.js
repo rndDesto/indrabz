@@ -268,5 +268,61 @@ $(document).ready(function(){
         $('.ubah-pass-main-detail').removeClass('d-none')
     })
 
+    $('.ajukandana-nav a').click(function(e){
+        e.preventDefault();
+        var ajukan = $(this).data("tabajukan");
+        $(this).addClass('active').closest('li').siblings().find('a').removeClass('active')
+        $("[data-ajukan="+ajukan+"]").removeClass('d-none').siblings().addClass('d-none');
+
+    })
+
+
+    $('.filter-investasi').click(function(e){
+        $(".investasi-pop-filter").removeClass("d-none")
+    })
+
+    $('.investasi-pop-filter').click(function(e){
+        $(".investasi-pop-filter").addClass("d-none")
+        $(".investasi-pop-filter-sub").removeClass("d-none")
+    })
+
+    $('.investasi-typetext').keyup(function(e){
+        if($(this).val().length > 0){
+            $(".investasi-search-filter").removeClass("d-none");
+            $(".filter-hapus").removeClass("d-none");
+        }
+        else{
+            $(".investasi-search-filter").addClass("d-none");
+            $(".filter-hapus").addClass("d-none");
+        }
+    })
+
+
+    $('.investasi-nav a').click(function(e){
+        e.preventDefault();
+        var investasi = $(this).data("tabinvestasi");
+        $(this).addClass('active').closest('li').siblings().find('a').removeClass('active')
+        $("[data-investasi="+investasi+"]").removeClass('d-none').siblings().addClass('d-none');
+
+    })
+
+    $('.show-beli-detail').click(function(e){
+        $(".beli-pop-filter").removeClass("d-none")
+    })
+    $(".beli-berhasil").click(function(){
+        $(".detail-berhasil").toggleClass("active")
+    })
+
+    $('.bisnis-filter').click(function(e){
+        $(".bisnis-pop-filter").removeClass("d-none")
+    })
+
+    $('.galeri-photo').click(function(e){
+        $(".overlay-galeri").removeClass("d-none")
+    })
+
+
+    
+
 })
 

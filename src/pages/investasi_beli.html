@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../bundle/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Start Header Beli -->
+    <div class="container-fluid investasi-beli-header">
+        <div class="row pt10 pb10">
+            <div class="col-3">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <div class="col-9">Pembelian Slot Bisnis</div>
+        </div>
+    </div>
+    <!-- End Header Beli -->
+
+    <!-- Start Detail Beli -->
+    <div class="bg-white investasi-beli-detail container-fluid mb20">
+        <h2>Detail Pembelian</h2>
+        <div class="row">
+            <div class="col-3">
+                <div class="text-center">
+                    <img class="img-fluid" src="../images/beli.png" alt="">
+                </div>
+
+            </div>
+            <div class="col-9">
+                <div class="beli-rinci">
+                    <div class="rinci-harga">Nama Bisnis</div>
+                    <div class="rinci-harga bold600">Laundry Klin</div>
+                </div>
+                <div class="beli-rinci">
+                    <div class="rinci-harga">Jangka waktu pembagian profit</div>
+                    <div class="rinci-harga bold600">3 Bulan</div>
+                </div>
+                <div class="beli-rinci">
+                    <div class="rinci-harga">Estimasi ROI/tahun</div>
+                    <div class="rinci-harga bold600">10 - 20%</div>
+                </div>
+                <div class="beli-rinci">
+                    <div class="rinci-harga">Estimasi BEP</div>
+                    <div class="rinci-harga bold600">1 - 2 Bulan</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Detail Beli -->
+
+
+    <div class="container-fluid beli-slot bg-white">
+        <div class="row pt10 pb10">
+            <div class="col-5 bold600 pt10">Jumlah slot bisnis</div>
+            <div class="col-7">
+                <div class="slot-count">
+                    <div class="beli-count beli-decrease disable">
+                        <span>-</span>
+                    </div>
+                    <div class="beli-count">
+                        <div class="beli-jumlah">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="beli-count beli-increase">
+                        <span>+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Start Detail Result -->
+    <div class="container-fluid bg-white beli-result">
+        <div class="beli-separator">
+            <div class="row mb10">
+                <div class="col-6">Biaya Investasi</div>
+                <div class="col-6 text-right">Rp 160.000.000</div>
+            </div>
+            <div class="row mb10">
+                <div class="col-6">Biaya Investasi</div>
+                <div class="col-6 text-right">Rp 160.000.000</div>
+            </div>
+        </div>
+        <div class="row mb20">
+            <div class="col-6">Total Biaya Investasi</div>
+            <div class="col-6 text-right yellow">Rp 160.000.000</div>
+        </div>
+        <div class="row mb20">
+            <div class="col-12">
+                <button class="btn biz-default btn-full bg-white show-beli-detail">Konfirmasi Pembelian</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Detail Result -->
+
+    <!-- Start Investasi Pop up -->
+   <div class="biz-overlay beli-pop-filter d-none">
+        <div class="biz-overlay-modal modal-btm-min40">
+             <div class="biz-overlay-head close-modal">
+                <img class="img-fluid" src="../images/closemodal.png" alt="">
+             </div>
+             <div class="biz-overlay-body">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Detail Pembelian Sudah Benar?</h2>
+                        <p>Setalah ini saldo B-Wallet Anda akan terpotong sesuai total biaya investasi.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p>Nama Bisnis:</p>
+                    </div>
+                    <div class="col-6 text-right bold600">
+                        <p>Laundry Klin</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p>Biaya Investasi:</p>
+                    </div>
+                    <div class="col-6 text-right bold600">
+                        <p>Rp 160.000.000</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p>Biaya Platform:</p>
+                    </div>
+                    <div class="col-6 text-right bold600">
+                        <p>Rp 8.000.000</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p>Total Biaya Investasi:</p>
+                    </div>
+                    <div class="col-6 text-right bold600">
+                        <p>Rp 168.000.000</p>
+                    </div>
+                </div>
+                <div class="row mb10">
+                    <div class="col-12">
+                        <button class="btn biz-default btn-full bg-white ">Konfirmasi Pembelian</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn biz-secondary btn-full bg-white ">Konfirmasi Pembelian</button>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <!-- End Investasi Pop up -->
+    
+    <script src="../../bundle/main.bundle.js"></script>
+</body>
+</html>

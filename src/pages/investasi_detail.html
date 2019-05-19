@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../bundle/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header id="temp-header">
+        <cmp-header></cmp-header>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Nav Service -->
+    <div id="nav-menu">
+        <cmp-navservice></cmp-navservice>
+    </div>
+    <!-- Start Nav Service -->
+
+    <!-- Start Loggedin Service -->
+    <div id="nav-logged-in">
+        <cmp-navloggedin></cmp-navloggedin>
+    </div>
+    <!-- Start Loggedin Service -->
+
+    <!-- Start Investasi List -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="investasi-banner">
+                    <img class="img-responsive" src="../images/dummy_sederhana.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                    <div class="biz-card mb20">
+                            <div class="biz-card-body">
+                                <div class="card-separator">
+                                    <div class="investasi-list-title">
+                                        <div class="investasi-icon">
+                                            <img src="../images/Food.png" alt="">
+                                            Makanan
+                                        </div>
+                                        <h3>Kontainer Kebab Baba Rafi cabang Tebet Raya </h3>
+                                        <p class="gray">Kota Jakarta Selatan, DKI Jakarta</p>
+                                    </div>
+                                </div>
+            
+                                <div class="row pt10">
+                                    <div class="col-4">
+                                        <div class="card-logo-box">
+                                            <div class="card-logo-item">
+                                                <img class="img-fluid" src="../images/bisnis-kebab.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-caption-box mt20">
+                                            <div class="biz-caption-default bold600"> PT. Baba Rafi Indonesia</div>
+                                            <div class="biz-caption-default">Mitra</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row pt20">
+            <div class="col-7">
+                <div class="biz-caption-default">Dana Terkumpul</div>
+            </div>
+            <div class="col-5 text-right">
+                <div class="biz-caption-default red">2 Slot Tersisa</div>
+            </div>
+        </div>
+        <div class="row pt10">
+            <div class="col-10">
+                <div class="pbWrap">
+                    <div class="pbProgress" style="width:90%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 text-right">
+                <div class="pb-text">
+                    90%
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 investasi-detail-info">
+                <p class="investasi-info-title">Dana yang dibutuhkana</p>
+                <p class="investasi-info-subtitle">RP 2.595.000.000</p>
+            </div>
+            <div class="col-12 investasi-detail-info">
+                <p class="investasi-info-title">Investor</p>
+                <p class="investasi-info-subtitle">12 Orang</p>
+            </div>
+            <div class="col-12 investasi-detail-info">
+                <p class="investasi-info-title">Tersisa</p>
+                <p class="investasi-info-subtitle">17 Hari</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Investasi List -->
+
+
+    <!-- Start Investasi Tab -->
+    <div class="container-fluid p-0 investasi-nav">
+        <div class="service-slide">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <ul>
+                        <li><a href="#" class="active" data-tabinvestasi="investasi1">Proyek Finansial</a></li>
+                        <li><a href="" data-tabinvestasi="investasi2">Tentang Bisnis</a></li>
+                        <li><a href="" data-tabinvestasi="investasi3">Kategori Bisnis</a></li>
+                        <li><a href="" data-tabinvestasi="investasi4">Lokasi</a></li>
+                        <li><a href="" data-tabinvestasi="investasi5">Simulasi Investasi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Investasi Tab -->
+
+    <div class="investasitab">
+        <!-- start investasi tentang -->
+        <div class="bg-white pt20" data-investasi="investasi1">
+            <div class="container-fluid">
+                <div class="investasi-tetang">
+                    <div class="row mb20">
+                        <div class="col-3">
+                            <div class="investasi-tetang-box">
+                                <div class="investasi-tetang-item text-center">
+                                    <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="investasi-tetang-caption">
+                                <p>Total saham yang dibagikan ke investor:</p>
+                                <h2>100%</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb20">
+                        <div class="col-3">
+                            <div class="investasi-tetang-box">
+                                <div class="investasi-tetang-item text-center">
+                                    <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="investasi-tetang-caption">
+                                <p>Total estimasi profit yang diterima investor/bulan:</p>
+                                <h2>Rp. 9.252.077,25 - Rp. 12.952.908,25</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb20">
+                        <div class="col-3">
+                            <div class="investasi-tetang-box">
+                                <div class="investasi-tetang-item text-center">
+                                    <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="investasi-tetang-caption">
+                                <p>Jangka waktu pembagian profit:</p>
+                                <h2>4 Bulan</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb20">
+                        <div class="col-3">
+                            <div class="investasi-tetang-box">
+                                <div class="investasi-tetang-item text-center">
+                                    <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="investasi-tetang-caption">
+                                <p>Estimasi ROI / tahun:</p>
+                                <h2>25 - 40%</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb20">
+                        <div class="col-3">
+                            <div class="investasi-tetang-box">
+                                <div class="investasi-tetang-item text-center">
+                                    <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="investasi-tetang-caption">
+                                <p>Estimasi BEP:</p>
+                                <h2>20 Bulan</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end investasi tentang -->
+
+        <!-- start investasi tentang -->
+        <div class="bg-white pt20 d-none" data-investasi="investasi2">
+            <div class="container-fluid">
+                <div class="ajukan-tetang">
+                    <div class="row">
+                        <div class="col-12">
+                                <p>Kebab Turki Baba Rafi semakin membuktikan kiprahnya dalam dunia waralaba, dibuktikan dengan merajalelanya warna merah dan kuning yang melekat pada outlet bertuliskan Kebab Turki Baba Rafi ‘The World’s Biggest Kebab Chain’.</p>
+                                <p>Hendy Setiono yang memutuskan untuk mencoba menghadirkan usaha makanan ini pada tahun 2003. Berawalkan hanya dari satu gerobak di sudut jalan di Surabaya, kini 1200 outlet Kebab telah menghiasi berbagai negara, Indonesia, Filipina, China, Srilanka dan Malaysia. Terinsipirasi dari daerah Timur Tengah, Qatar, makanan kebab ini dicoba disesuaikan dengan mengkombinasikan makanan khas daerah tersebut dengan selera lidah masyarakat di sekitarnya sehingga menghasilkan rasa original yang diminati banyak orang.</p>
+                                <p>Dan sekarang, Kebab Turki Baba Rafi sedang terus melebarkan sayapnya untuk menjangkau pasar-pasar Internasional. Dengan penuh keyakinan dan terus menjaga rasa juga kualitas hal tersebut sangatlah mungkin akan terwujud melihat banyaknya penggemar Kebab Turki Baba Rafi saat ini.</p>
+                                <p>Kami Membuat kombinasi resep tradisional dan modern, selalu berusaha menjadikan produk paling inovatif, memenuhi kebutuhan selera konsumen dan mengikuti tren terbaru. Kami memiliki divisi R&D yang merupakan salah satu divisi paling penting dalam perusahaan. Kami mempunyai hak paten Internasional untuk kemasan dan resep. Core business kami saat ini adalah Franchise yang menjual makanan Kebab Turki ​</p>
+                                <p>Fasilitas</p>
+                                
+                                <p>Nama Merk selama 5 tahun 
+                                    <br>Peralatan Booth
+                                    <br>Pengelolaan under management Syariah dengan system bagi hasil 60% Franchisee dan 40% franchisor (auto pilot)
+                                    <br>Selain Kebab, Bisnis Baba rafi Group Bisnisnya sudah meliputi berbagai cabang usaha seperti :
+                                </p> 
+                                <ul>
+                                    <li>Tambak Udang Vaname</li>
+                                    <li>Foresthree Café</li>
+                                    <li>Fish Streat</li>
+                                </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end investasi tentang -->
+
+        <!-- start investasi tentang -->
+        <div class="bg-white pt20 d-none" data-investasi="investasi3">
+            <div class="container-fluid">
+                    <div class="investasi-tetang">
+                        <div class="row mb20">
+                            <div class="col-3">
+                                <div class="investasi-tetang-box">
+                                    <div class="investasi-tetang-item text-center">
+                                        <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="investasi-tetang-caption">
+                                    <p>Kategori Bisnis:</p>
+                                    <h2>F&B</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb20">
+                            <div class="col-3">
+                                <div class="investasi-tetang-box">
+                                    <div class="investasi-tetang-item text-center">
+                                        <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="investasi-tetang-caption">
+                                    <p>Core Bisnis:</p>
+                                    <h2>Kios Kebab</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb20">
+                            <div class="col-3">
+                                <div class="investasi-tetang-box">
+                                    <div class="investasi-tetang-item text-center">
+                                        <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="investasi-tetang-caption">
+                                    <p>Berdiri Sejak</p>
+                                    <h2>2018</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb20">
+                            <div class="col-3">
+                                <div class="investasi-tetang-box">
+                                    <div class="investasi-tetang-item text-center">
+                                        <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="investasi-tetang-caption">
+                                    <p>Jenis Bisnis</p>
+                                    <h2>Grand Opening</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb20">
+                            <div class="col-3">
+                                <div class="investasi-tetang-box">
+                                    <div class="investasi-tetang-item text-center">
+                                        <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="investasi-tetang-caption">
+                                    <p>Pemilik Bisnis:</p>
+                                    <h2>PT. Baba Rafi Indonesia (Baba Rafi Enterprise)</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb20">
+                            <div class="col-3">
+                                <div class="investasi-tetang-box">
+                                    <div class="investasi-tetang-item text-center">
+                                        <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="investasi-tetang-caption">
+                                    <p>Target Investasi:</p>
+                                    <h2>Rp 260,000,000</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb20">
+                            <div class="col-3">
+                                <div class="investasi-tetang-box">
+                                    <div class="investasi-tetang-item text-center">
+                                        <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="investasi-tetang-caption">
+                                    <p>Minimum Investasi</p>
+                                    <h2>Rp 5,000,000.</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb20">
+                            <div class="col-3">
+                                <div class="investasi-tetang-box">
+                                    <div class="investasi-tetang-item text-center">
+                                        <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="investasi-tetang-caption">
+                                    <p>Total Cabang:</p>
+                                    <h2>2000</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- end investasi tentang -->
+        
+        <!-- start investasi tentang -->
+        <div class="bg-white pt20 d-none" data-investasi="investasi4">
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="img-fluid" src="../images/maps.png" alt="">
+                            <p>Berlokasi di Perempatan Depan Outlet Captain Hood, Jl. Raya Gubeng No.66, Gubeng, Kota SBY, Jawa Timur 60281 yang dikelilingi oleh area perhotelan, perkantoran, perbelanjaan dan pendidikan dalam satu wilayah.</p>
+                            <p>Lokasi ini Diapit oleh 2 Hotel Besar yaitu Hotel Santika Premiere Surabaya dan G Suites Hotel. Serta Di seberang nya persis terdapat 2 Sekolah yaitu SMP Negeri 6 dan SMA Giki 2 Surabaya. 50 meter dari sana, terdapat Rumah Sakit Siloam Surabaya yang bisa dijangkau dengan berjalan kaki, sehingga sangat strategis dan punya market yang sangat besar, apalagi outletnya buka 24 jam.</p>
+                            <p>Dengan begitu, tentunya bisa menghasilkan penjualan yang tinggi untuk outlet kebab anda.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- end investasi tentang -->
+
+        <!-- start investasi simulasi -->
+        <div class="container-fluid investasi-simulasi d-none" data-investasi="investasi5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="simulasi-box">
+                        <div class="simulasi-form">
+                            <label for="">Masukan jumlah slot</label>
+                            <div class="simulasi-slot">
+                                <div class="simulasi-count simulasi-decrease disable">
+                                    <span>-</span>
+                                </div>
+                                <div class="simulasi-count simulasi-input">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="simulasi-count simulasi-increase">
+                                    <span>+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="simulasi-form">
+                            <label for="">Nilai Investasi</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="simulasi-form">
+                            <label for="">Estimasi Profit</label>
+                            <div class="simulasi-form-rupiah">
+                                    <input type="text" class="form-control">
+                                    <span class="simulasi-form-rp">Rp </span>
+                                </div>
+                            <div class="simulasi-separator">-</div>
+                            <div class="simulasi-form-rupiah">
+                                <input type="text" class="form-control">
+                                <span class="simulasi-form-rp">Rp </span>
+                            </div>
+                        </div>
+                        <div class="simulasi-form">
+                            <label for="">ROI (%) per tahun</label>
+                            <div class="simulasi-form-roi">
+                                    <input type="text" class="form-control">
+                                </div>
+                            <div class="simulasi-separator">-</div>
+                            <div class="simulasi-form-roi">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <p class="fs14 gray">*Ekspektasi keuntungan merupakan keuntungan selama satu proyek (1 tahun)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- start investasi simulasi -->
+    </div>
+
+    <!-- Start Download Proposal -->
+    <div class="container-fluid investasi-share">
+        <div class="row pt10 pb10">
+            <div class="col-2 p-0">
+                <div class="share-btn">
+                    <button class="btn biz-secondary btn-full bg-white"><i class="fa fa-share-alt"></i></button>
+                </div>
+            </div>
+            <div class="col-7 p-0">
+                <div class="share-btn">
+                    <button class="btn biz-secondary btn-full bg-white">Download Proposal</button>
+                </div>
+            </div>
+            <div class="col-3 p-0">
+                <div class="share-btn">
+                    <button class="btn biz-default btn-full">Beli</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Download Proposal -->
+
+
+
+
+    <footer id="temp-footer">
+        <cmp-footer></cmp-footer>
+    </footer>
+    <script src="../../bundle/main.bundle.js"></script>
+</body>
+</html>

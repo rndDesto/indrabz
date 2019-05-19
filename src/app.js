@@ -7,6 +7,8 @@ import './js/faq';
 import './js/tentang';
 import './js/history';
 import './js/bwallet';
+import './js/investasi';
+import './js/bisnis';
 import './js/swiper';
 import './contohJquery';
 // import * as getNameExport from './contohExport';

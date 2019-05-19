@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../bundle/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-white-alt">
+    <!-- Start Header -->
+    <header id="temp-header">
+        <div class="container-fluid header-container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="header-menu">
+                        <img class="img-fluid" src="../images/header_menu.png" alt="share biz">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="header-caption">
+                        <h1>Bisnis Ssya</h1>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="header-profil">
+                        <img class="img-fluid" src="../images/header_profil.png" alt="share biz">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Nav Service -->
+    <div id="nav-menu">
+        <cmp-navservice></cmp-navservice>
+    </div>
+    <!-- Start Nav Service -->
+
+    <!-- Start Loggedin Service -->
+    <div id="nav-logged-in">
+        <cmp-navloggedin></cmp-navloggedin>
+    </div>
+    <!-- Start Loggedin Service -->
+
+
+    <!-- Start Kembali -->
+    <div class="container-fluid bisnis-kembali">
+        <div class="row">
+            <div class="col-2">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <div class="col-10 p-0">
+                Kembali
+            </div>
+        </div>
+    </div>
+    <!-- End Kembali -->
+
+
+    <div class="container-fluid mt20">
+        <div class="biz-card history-card">
+            <div class="history-top history-pad bisnis-periode">
+                <div class="row bisnis-list-header">
+                    <div class="col-6 history-left bold600">
+                        Detail Laporan
+                    </div>
+                    <div class="col-6 history-right">
+                        <button class="btn biz-default btn-full">Download</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 history-left gray">
+                        Periode
+                    </div>
+                    <div class="col-6 history-right gray">
+                        Total Income
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 history-left bold600">
+                        Januari 2019
+                    </div>
+                    <div class="col-6 history-right bold600 yellow">
+                        Rp 5.000.000
+                    </div>
+                </div>
+                <div class="row mt20">
+                    <div class="col-6 history-left gray">
+                        Status
+                    </div>
+                    <div class="col-6 history-right gray">
+                        Total Share
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 history-left bold600">
+                        Distributed
+                    </div>
+                    <div class="col-6 history-right bold600">
+                        16.5 %
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Detail Laporan -->
+    <div class="container-fluid mt20">
+        <div class="biz-card history-card fs14">
+            <div class="history-top history-pad bisnis-periode">
+                <div class="row bisnis-list-header">
+                    <div class="col-6 history-left bold600">
+                        Detail Laporan
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 history-left gray">
+                        Periode
+                    </div>
+                    <div class="col-6 history-right bold600">
+                        Total Income
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 history-left gray">
+                        Periode
+                    </div>
+                    <div class="col-6 history-right bold600">
+                        Total Income
+                    </div>
+                </div>
+
+                <div class="row detail-result">
+                    <div class="col-6 history-left gray">
+                        Net Income
+                    </div>
+                    <div class="col-6 history-right bold600 yellow">
+                        Rp. 16.750.000
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- End Detail Laporan -->
+
+    <script src="../../bundle/main.bundle.js"></script>
+</body>
+</html>

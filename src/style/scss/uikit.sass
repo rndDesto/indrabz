@@ -52,6 +52,8 @@ a.red, .red
     letter-spacing: 0.2px
 .a.yellow, .yellow
     color: #EB9A1A
+.a.gray, .gray
+    color: #6D6D6D
 .bg-gray
     background-color: #F3F6F8
 
@@ -93,6 +95,17 @@ a.red, .red
     font-weight: 400
     letter-spacing: 0.4px
     text-align: center
+.investor
+    padding-top: 20px
+    .investor-text
+        font-size: 16px
+        font-weight: 600
+        letter-spacing: 0.2px
+    .investor-left
+        line-height: 40px
+        text-align: right
+        color: #DA3434
+        font-weight: 600
 
 .ovh
     overflow: hidden
@@ -140,6 +153,14 @@ a.red, .red
             top: 10px
             right: 10px
             color: #B1B1B1
+    &.form-icon-left
+        i
+            position: absolute
+            top: 10px
+            left: 10px
+            color: #B1B1B1
+        .form-control
+            padding-left: 30px
 
 .form-control
     display: block
@@ -335,27 +356,18 @@ a.red, .red
     h2
         color: #0F1019
         padding-bottom: 10px
-
+.bar-fund
+    padding-top: 20px
 .pbWrap
     position: relative
     height: 15px
     border-radius: 3px
     background: #EAEAEA
     overflow: hidden
-
 .pbProgress
     height: 100%
     border-radius: 3px
     background-color: #4168B8
-
-.pbText 
-    position: relative
-    top: -24px
-    left: 45%
-    color: #000000
-    font-size: 15px
-    font-style: italic
-    font-weight: bold
 
 .biz-label
     padding: 5px 10px
@@ -439,8 +451,14 @@ a.red, .red
     border-top-left-radius: 25px
     border-top-right-radius: 25px
     box-shadow: 0 0px 8px #797979
+    &.modal-btm-min70
+        bottom: -70%
     &.modal-btm-min60
         bottom: -60%
+    &.modal-btm-min50
+        bottom: -50%
+    &.modal-btm-min40
+        bottom: -40%
     &.modal-btm-min10
         bottom: -10%
     .biz-overlay-head
@@ -452,7 +470,30 @@ a.red, .red
             position: absolute
             top: 20px
             left: 25px
+        &.close-modal
+            width: 50px
+            text-align: center
+            margin: auto
+            border: none
     .biz-overlay-body
         padding: 20px
         overflow: auto
         max-height: 80%
+    
+
+.btn-filter
+    position: fixed
+    width: 50%
+    bottom: 20px
+    margin: auto
+    left: 0
+    right: 0
+    background-color: #fff
+    text-align: center
+    border: 1px solid #304B82
+    padding: 5px
+    border-radius: 60px
+    img
+        width: 18px
+        margin-right: 5px
+        margin-bottom: 5px

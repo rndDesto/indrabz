@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../bundle/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header id="temp-header">
+        <cmp-header></cmp-header>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Nav Service -->
+    <div id="nav-menu">
+        <cmp-navservice></cmp-navservice>
+    </div>
+    <!-- Start Nav Service -->
+
+    <!-- Start Loggedin Service -->
+    <div id="nav-logged-in">
+        <cmp-navloggedin></cmp-navloggedin>
+    </div>
+    <!-- Start Loggedin Service -->
+
+    <!-- Start Investasi Banner-->
+    <div class="container-fluid p-0">
+        <div class="investasi-banner">
+            <img class="img-responsive" src="../images/image_investasi_bisnis.png" alt="">
+            <div class="investasi-banner-caption">
+                <h2>Investasi Bisnis</h2>
+                <p>Silakan pilih bisnis yang sedang berlangsung dan siap untuk di investasi</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Investasi Banner-->
+
+    <!-- Start Investasi Search -->
+    <div class="container-fluid bg-white p-0">
+        <div class="investasi-box">
+            <div class="form-icon form-icon-left">
+                <input type="text" class="form-control investasi-typetext" placeholder="Cari nama bisnis atau kategori bisnis">
+                <i class="fa fa-search"></i>
+                <div class="filter-hapus d-none">
+                    Hapus
+                </div>
+            </div>
+           <div class="investasi-search-filter d-none">
+                <div class="investasi-filter-caption">
+                    Filter
+                </div>
+                <div class="investasi-filter-label">
+                    <div class="investasi-label-choosen">
+                        <span>Makanan <i class="fa fa-close"></i></span>
+                        <span>Makanan <i class="fa fa-close"></i></span>
+                        <span>Makanan <i class="fa fa-close"></i></span>
+                    </div>
+                </div>
+                <div class="filter-refresh">
+                    <i class="fa fa-refresh"></i> Reset
+                </div>
+           </div>
+        </div>
+    </div>
+    <!-- End Investasi Search -->
+
+    <!-- Start Investasi List -->
+    <div id="investasi-list" class="container-fluid investasi-list">
+        <div class="row">
+            <div class="col-12">
+                <div class="biz-card mb20" v-for="item in investasiList">
+                    <div class="biz-card-thumb">
+                        <img src="../images/dummy_sederhana.jpg" alt="">
+                        <div class="biz-card-label" :class="item.completed ? 'investasi-complete':''">
+                            <template v-if="!item.completed">
+                                {{item.batas_fund}} Hari
+                            </template>
+                            <template v-else>
+                                Selesai
+                            </template>
+                        </div>
+                    </div>
+                    <div class="biz-card-body">
+                        <div class="card-separator">
+                            <div class="row">
+                                <div class="col-12 investasi-list-title">
+                                    <h3>{{item.title}}</h3>
+                                    <p class="gray">{{item.sub_title}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pt20">
+                            <div class="col-8">
+                                <div class="biz-caption-default">Dana yang dibutuhkan</div>
+                                <div class="investor-text">Rp. {{item.reqiure_fund}}</div>
+                            </div>
+                            <div class="col-4 text-right">
+                                <div class="biz-caption-default">Investor</div>
+                                <div class="investor-text">{{item.investor_count}} Orang</div>
+                            </div>
+                        </div>
+                        <div class="bar-fund">
+                            <div class="biz-caption-default pb20">Dana Terkumpul</div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="pbWrap">
+                                        <div class="pbProgress" :style="{width:item.progress+'%'}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="pb-text">
+                                        {{item.progress}}%
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="investor">
+                            <div class="row">
+                                <template v-if="item.tersisa">
+                                    <div class="col-12 text-right">
+                                        <div class="investor-left">{{item.tersisa}} Slot Tersisa</div>
+                                    </div>
+                                </template>
+                                <template v-else>
+                                    <div class="col-12 text-right">
+                                        <div class="investor-left invest-terpenuhi">{{item.tersisa}} Slot Tersisa</div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt20 pb20">
+            <a href="#" class="btn biz-default btn-center">Lihat Lainnya</a>
+        </div>
+    </div>
+    <!-- End Investasi List -->
+
+    <div class="btn-filter filter-investasi">
+        <img class="img-fluid" src="../images/filter.png" alt="">Filter
+    </div>
+
+    
+
+    
+   <!-- Start Investasi Pop up -->
+   <div class="biz-overlay d-none investasi-pop-filter">
+        <div class="biz-overlay-modal modal-btm-min70">
+             <div class="biz-overlay-head">
+                 Filter Berdasarkan
+                 <i class="fa fa-close"></i>
+             </div>
+             <div class="biz-overlay-body">
+                <ul>
+                    <li>Kategori <i class="fa fa-angle-right"></i> </li>
+                    <li>Dana Terkumpul <i class="fa fa-angle-right"></i> </li>
+                    <li>Dana Dibutuhkan <i class="fa fa-angle-right"></i> </li>
+                </ul>
+             </div>
+        </div>
+    </div>
+    <!-- End Investasi Pop up -->
+
+
+    <!-- Start Investasi Pop up -->
+    <div class="biz-overlay d-none investasi-pop-filter-sub">
+        <div class="biz-overlay-modal modal-btm-min50">
+                <div class="biz-overlay-head">
+                    Filter Berdasarkan
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="biz-overlay-body">
+                <ul>
+                    <li><i class="fa fa-angle-left"></i> Kembali</li>
+                    <li>Dana Terkumpul</li>
+                    <li>Dana Dibutuhkan</li>
+                    <li>Dana Terkumpul</li>
+                    <li>Dana Dibutuhkan</li>
+                    <li>Dana Terkumpul</li>
+                    <li>Dana Dibutuhkan</li>
+                    <li>Dana Terkumpul</li>
+                    <li>Dana Dibutuhkan</li>
+                    <li>Dana Terkumpul</li>
+                    <li>Dana Dibutuhkan</li>
+                </ul>
+                </div>
+        </div>
+    </div>
+    <!-- End Investasi Pop up -->
+
+
+
+
+
+    <footer id="temp-footer">
+        <cmp-footer></cmp-footer>
+    </footer>
+    <script src="../../bundle/main.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../bundle/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header id="temp-header">
+        <cmp-header></cmp-header>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Nav Service -->
+    <div id="nav-menu">
+        <cmp-navservice></cmp-navservice>
+    </div>
+    <!-- Start Nav Service -->
+
+    <!-- Start Loggedin Service -->
+    <div id="nav-logged-in">
+        <cmp-navloggedin></cmp-navloggedin>
+    </div>
+    <!-- Start Loggedin Service -->
+
+    <!-- Start Ajukan Banner-->
+    <div class="container-fluid p-0">
+        <div class="ajukandana-banner">
+            <img class="img-responsive" src="../images/investasibisnis.png" alt="">
+        </div>
+    </div>
+    <!-- End Ajukan Banner-->
+
+    <!-- Start Ajuan Search -->
+    <div class="container-fluid bg-white p-0">
+        <div class="ajukandana-box">
+            <div class="row ajukan-separator">
+                <div class="col-4">
+                    <div class="ajukan-thumb">
+                        <div class="ajukan-logo">
+                            <img class="img-fluid" src="../images/bisnis-kebab.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="ajukan-pt bold600">
+                        PT. Baba Rafi Indonesia
+                    </div>
+                    <div class="ajukan-sub-pt">
+                        Food & Beverage 
+                    </div>
+                </div>
+            </div>
+            <div class="row ajukan-holder">
+                <div class="col-6">
+                    <h3>Total Investor</h3>
+                    <p>23</p>
+                </div>
+                <div class="col-6">
+                    <h3>Total Investor</h3>
+                    <p class="yellow">72</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pt20">
+                    <button class="btn biz-default btn-full">Ajukan Pendanaan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Ajuan Search -->
+
+
+    <!-- Start Ajukan Nav -->
+    <div class="container-fluid ajukandana-nav bg-white">
+        <div class="row">
+           <div class="col-12 p-0">
+                <ul>
+                    <li><a href="#" class="active" data-tabajukan="ajukan1">Proyek Finansial</a></li>
+                    <li><a href="" data-tabajukan="ajukan2">Tentang Bisnis</a></li>
+                    <li><a href="" data-tabajukan="ajukan3">Lokasi</a></li>
+                    <li><a href="" data-tabajukan="ajukan4">Video</a></li>
+                </ul>
+           </div>
+        </div>
+    </div>
+    <!-- End Ajukan Nav -->
+
+    <div class="ajukantab">
+        <!-- start ajukan tentang -->
+        <div class="bg-white pt20 ajukan" data-ajukan="ajukan1">
+            <div class="container-fluid">
+                <div class="ajukan-tetang">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="ajukan-tetang-box">
+                                <div class="ajukan-tetang-item text-center">
+                                    <img class="img-fluid" src="../images/icons_wallet_big.png" alt="item.title">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="ajukan-tetang-caption">
+                                <p>Total Nilai Investasi:</p>
+                                <h2>Rp 75.000.000 untuk outlet Super Hero</h2>
+                                <p>Dengan perhitungan:</p>
+                                <ul>
+                                    <li>Pemasukan perbulan : Rp 19.500.000</li>
+                                    <li>Pengeluaran : Rp 14.640.000</li>
+                                    <li>Keuntungan Bersih : Rp 4.860.000 ( Keuntungan 24% dari Revenue)</li>
+                                </ul>
+                                <h2>Rp 200.000.000 untuk outlet Black Boot </h2>
+                                <p>Dengan perhitungan:</p>
+                                <ul>
+                                    <li>Pemasukan perbulan : Rp 45.000.000</li>
+                                    <li>Pengeluaran : Rp 36.000.000</li>
+                                    <li>Keuntungan Bersih : Rp 9.000.000 ( Keuntungan 20% dari Revenue)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="ajukan-tetang-box">
+                                <div class="ajukan-tetang-item text-center">
+                                    <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="ajukan-tetang-caption">
+                                <p>Estimasi ROI / tahun:</p>
+                                <h2>15 - 20%</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="ajukan-tetang-box">
+                                <div class="ajukan-tetang-item text-center">
+                                    <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="ajukan-tetang-caption">
+                                <p>Estimasi ROI / tahun:</p>
+                                <h2>15 - 20%</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="ajukan-tetang-box">
+                                <div class="ajukan-tetang-item text-center">
+                                    <img class="img-fluid" src="../images/icons_wallet_big2.png" alt="item.title">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="ajukan-tetang-caption">
+                                <p>Estimasi ROI / tahun:</p>
+                                <h2>15 - 20%</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end ajukan tentang -->
+
+        <!-- start ajukan tentang -->
+        <div class="bg-white pt20 ajukan d-none" data-ajukan="ajukan2">
+            <div class="container-fluid">
+                <div class="ajukan-tetang">
+                    <div class="row">
+                        <div class="col-12">
+                                <p>Kebab Turki Baba Rafi semakin membuktikan kiprahnya dalam dunia waralaba, dibuktikan dengan merajalelanya warna merah dan kuning yang melekat pada outlet bertuliskan Kebab Turki Baba Rafi ‘The World’s Biggest Kebab Chain’.</p>
+                                <p>Hendy Setiono yang memutuskan untuk mencoba menghadirkan usaha makanan ini pada tahun 2003. Berawalkan hanya dari satu gerobak di sudut jalan di Surabaya, kini 1200 outlet Kebab telah menghiasi berbagai negara, Indonesia, Filipina, China, Srilanka dan Malaysia. Terinsipirasi dari daerah Timur Tengah, Qatar, makanan kebab ini dicoba disesuaikan dengan mengkombinasikan makanan khas daerah tersebut dengan selera lidah masyarakat di sekitarnya sehingga menghasilkan rasa original yang diminati banyak orang.</p>
+                                <p>Dan sekarang, Kebab Turki Baba Rafi sedang terus melebarkan sayapnya untuk menjangkau pasar-pasar Internasional. Dengan penuh keyakinan dan terus menjaga rasa juga kualitas hal tersebut sangatlah mungkin akan terwujud melihat banyaknya penggemar Kebab Turki Baba Rafi saat ini.</p>
+                                <p>Kami Membuat kombinasi resep tradisional dan modern, selalu berusaha menjadikan produk paling inovatif, memenuhi kebutuhan selera konsumen dan mengikuti tren terbaru. Kami memiliki divisi R&D yang merupakan salah satu divisi paling penting dalam perusahaan. Kami mempunyai hak paten Internasional untuk kemasan dan resep. Core business kami saat ini adalah Franchise yang menjual makanan Kebab Turki ​</p>
+                                <p>Fasilitas</p>
+                                
+                                <p>Nama Merk selama 5 tahun 
+                                    <br>Peralatan Booth
+                                    <br>Pengelolaan under management Syariah dengan system bagi hasil 60% Franchisee dan 40% franchisor (auto pilot)
+                                    <br>Selain Kebab, Bisnis Baba rafi Group Bisnisnya sudah meliputi berbagai cabang usaha seperti :
+                                </p> 
+                                <ul>
+                                    <li>Tambak Udang Vaname</li>
+                                    <li>Foresthree Café</li>
+                                    <li>Fish Streat</li>
+                                </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end ajukan tentang -->
+
+        <!-- start ajukan tentang -->
+        <div class="bg-white pt20 ajukan d-none" data-ajukan="ajukan3">
+            <div class="container-fluid">
+                <div class="ajukan-tetang">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Berlokasi di Perempatan Depan Outlet Captain Hood, Jl. Raya Gubeng No.66, Gubeng, Kota SBY, Jawa Timur 60281 yang dikelilingi oleh area perhotelan, perkantoran, perbelanjaan dan pendidikan dalam satu wilayah.</p>
+                            <p>Lokasi ini Diapit oleh 2 Hotel Besar yaitu Hotel Santika Premiere Surabaya dan G Suites Hotel. Serta Di seberang nya persis terdapat 2 Sekolah yaitu SMP Negeri 6 dan SMA Giki 2 Surabaya. 50 meter dari sana, terdapat Rumah Sakit Siloam Surabaya yang bisa dijangkau dengan berjalan kaki, sehingga sangat strategis dan punya market yang sangat besar, apalagi outletnya buka 24 jam.</p>
+                            <p>Dengan begitu, tentunya bisa menghasilkan penjualan yang tinggi untuk outlet kebab anda.</p>
+                            <img class="img-fluid" src="../images/maps.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end ajukan tentang -->
+        
+        <!-- start ajukan tentang -->
+        <div class="bg-white pt20 ajukan d-none" data-ajukan="ajukan4">
+            <div class="container-fluid">
+                <div class="ajukan-tetang">
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="img-fluid" src="../images/video.png" alt="">
+                            <h3>Kebab Baba Rafi Bicara soal Rahasia Bisnisnya</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end ajukan tentang -->
+    </div>
+
+    <!-- start invest ongoing -->
+    <div id="invest-ongoing">
+        <div class="container-fluid mt20 mb20">
+            <div class="row">
+                <div class="col-7">Bisnis yang dibuka</div>
+                <div class="col-5">
+                    <div class="biz-filter">
+                        <select name="" id="" class="form-control">
+                            <option value="">Status</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt20">
+            <div class="biz-card mb20" v-for="item in investOngoing">
+                <div class="biz-card-body">
+                    <div class="card-separator">
+                        <div class="row pt10">
+                            <div class="col-4">
+                                <div class="card-logo-box">
+                                    <div class="card-logo-item">
+                                        <img class="img-fluid" :src="item.images" :alt="item.title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="card-caption-box">
+                                    <div class="biz-caption-secondary bold600">{{item.title}}</div>
+                                    <div class="biz-caption-default">{{item.sub_title}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt20">
+                        <div class="col-8">
+                            <div class="biz-caption-default">Dana yang dibutuhkan</div>
+                            <div class="investor-text">Rp. {{item.reqiure_fund}}</div>
+                        </div>
+                        <div class="col-4 text-right">
+                            <div class="biz-caption-default">Investor</div>
+                            <div class="investor-text">{{item.investor_count}} Orang</div>
+                        </div>
+                    </div>
+                    <div class="bar-fund">
+                        <div class="biz-caption-default pb20">Dana Terkumpul</div>
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="pbWrap">
+                                    <div class="pbProgress" :style="{width:item.progress+'%'}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="pb-text">
+                                    {{item.progress}}%
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="investor">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="biz-caption-default">Batas Fund</div>
+                                <div class="investor-text">{{item.batas_fund}} Hari Lagi</div>
+                            </div>
+                            <template v-if="item.tersisa">
+                                <div class="col-6">
+                                    <div class="investor-left">{{item.tersisa}} Slot Tersisa</div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end invest ongoing -->
+
+    <!-- Start Paging -->
+   <div class="container-fluid">
+        <div class="biz-paging paging-center">
+            <ul>
+                <li><a href="" class="paging-link"><i class="fa fa-chevron-left"></i></a></li>
+                <li><a href="" class="paging-link active">1</a></li>
+                <li><a href="" class="paging-link">2</a></li>
+                <li><a href="" class="paging-link">3</a></li>
+                <li><a href="" class="paging-link"><i class="fa fa-chevron-right"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Paging -->
+
+    <footer id="temp-footer">
+        <cmp-footer></cmp-footer>
+    </footer>
+    <script src="../../bundle/main.bundle.js"></script>
+</body>
+</html>
