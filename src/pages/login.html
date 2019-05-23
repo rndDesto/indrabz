@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../bundle/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-white">
+    <!-- Start Header -->
+    <header id="temp-header">
+        <cmp-header></cmp-header>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Nav Service -->
+    <div id="nav-menu">
+        <cmp-navservice></cmp-navservice>
+    </div>
+    <!-- Start Nav Service -->
+
+    <!-- Start Loggedin Service -->
+    <div id="nav-logged-in">
+        <cmp-navloggedin></cmp-navloggedin>
+    </div>
+    <!-- Start Loggedin Service -->
+
+
+    <!-- Start login cap -->
+    <div class="container-fluid login-cap">
+        <div class="row">
+            <div class="col-12">
+                <h2>Masuk</h2>
+                <p class="fs14">Belum punya akun Bizhare?<span class="dblue"> Daftar sekarang </span></p>
+            </div>
+        </div>
+        
+    </div>
+    <!-- End login cap -->
+    <!-- Start Profil Form -->
+    <div class="container-fluid pt20 pb20">
+        <div class="login-akun">
+            <label for="">Email</label>
+            <div class="form-icon form-icon-right">
+                <input type="text" class="form-control" placeholder="Masukan Email">
+            </div>
+        </div>
+        <div class="login-akun">
+            <label for="">Kata Sandi</label>
+            <div class="form-icon form-icon-right">
+                <input type="password" class="form-control" placeholder="Masukan Kata Sandi">
+                <i class="fa fa-eye"></i>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-6">
+                    <label class="form-checkbox">Ingat Saya
+                        <input type="checkbox">
+                        <span class="checkbox-checkmark"></span>
+                    </label>
+                </div>
+                <div class="col-6">
+                    <p class="text-right dblue">Lupa Password?</p>
+                </div>
+        </div>
+        <div class="row mt20">
+            <div class="col-12">
+                <button class="btn biz-default btn-full">Simpan</button>
+            </div>
+        </div>
+    </div>
+    <!-- End Profil Form -->
+    <script src="../../bundle/main.bundle.js"></script>
+</body>
+</html>

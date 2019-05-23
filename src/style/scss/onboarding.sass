@@ -1,0 +1,118 @@
+.onboarding-step
+    position: relative
+    // box-shadow: 0px 0px 8px 0px #d7d7d7
+    // border-bottom: 1px solid #edeede
+    width: 300px
+    margin: auto
+    .service-slide
+        padding: 0 !important
+        overflow: hidden !important
+    ul
+        position: relative
+        display: table
+        padding: 0
+        margin: 5px 0
+        &.data-diri
+            left: 110px
+        &.pendidikan
+            left: -110px
+        &.dokumen
+            left: -310px
+        &.bank
+            left: -460px
+        &.preferensi
+            left: -580px
+    li
+        position: relative
+        display: table-cell
+        list-style: none        
+        padding: 5px 40px 10px 10px
+        color: #304B82
+        span
+            display: inline-block
+            margin-right: 10px
+            border-radius: 50%
+            padding: 0 7px
+            font-size: 14px
+            background-color: #EEEEEE
+            color: #304B82
+        // &:first-child
+        //     padding-left: 110px
+        &:after
+            position: absolute
+            top: 16px
+            content: ""
+            display: block
+            width: 25px
+            height: 2px
+            background-color: #EEEEEE
+            right: 0px
+
+        &:last-child
+            padding-right: 110px
+            &:after
+                display: none
+        &.active
+           span
+                background-color: #304B82
+                color: #ffffff
+        
+
+.onboard-btn
+    border-top: 1px solid #EEEEEE
+    padding-top: 10px
+
+.btn-onboard
+    background-color: #ffffff
+    margin-bottom: 20px
+    border-color: #E6E6F0 !important
+    color: #6D6D6D !important
+    &.active
+        border-color: #4168B8 !important
+        color: #304B82 !important
+
+.onboard-akun
+    margin-bottom: 20px
+
+.onboard-pop-filter
+    ul
+        padding: 0
+        margin: 0
+        margin-top: 20px
+        overflow: auto
+        max-height: 500px
+    li
+        padding: 5px 20px
+        &.active
+            background-color: #F5F5F5
+            color: #304B82
+
+
+
+
+.onboarding-dokumen
+    border: 1px dashed #E6E6F0
+    padding: 10px
+    margin-bottom: 10px
+    border-radius: 4px
+    .onboarding-thumb
+        padding-top: 20px
+        width: 150px
+        margin: auto
+        &.onboard-selfie-img
+            width: 80px
+    .onboarding-btn
+        width: 250px
+        margin: 20px auto
+        text-align: center
+        .btn
+            border: 1px solid E6E6F0 !important
+            background-color: #F3F6F8    
+.onboard-heading
+    border-bottom: 1px solid #EEEEEE
+    padding-bottom: 10px
+    margin-bottom: 10px
+
+.onboard-berhasil
+    width: 150px
+    margin: auto

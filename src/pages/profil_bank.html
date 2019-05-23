@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-8">
                     <div class="header-caption">
-                        <h1>Bisnis Ssya</h1>
+                        <h1>Profil Saya</h1>
                     </div>
                 </div>
                 <div class="col-2">
@@ -49,84 +49,60 @@
     </div>
     <!-- Start Loggedin Service -->
 
-
-    <!-- Start Kembali -->
-    <div class="container-fluid bisnis-kembali">
-        <div class="row">
-            <div class="col-2">
-                <i class="fa fa-arrow-left"></i>
-            </div>
-            <div class="col-10 p-0">
-                Kembali
-            </div>
-        </div>
-    </div>
-    <!-- End Kembali -->
-
-    <!-- Start Progress Header -->
-    <div class="container-fluid bisnis-progress-header">
-        <div class="row">
-            <div class="col-3 text-center">
-                <img class="img-fluid" src="../images/beli.png" alt="">
-            </div>
-            <div class="col-9">
-                <h3>Laundry Klin Mozza Cabang Tebet</h3>
-                <p>Kota Jakarta Selatan, DKI Jakarta</p>
-            </div>
-        </div>
-    </div>
-    <!-- End Progress Header -->
-
-
     <!-- Start BWallet Nav -->
-   <div class="bisnis-nav">
+    <div class="profil-nav">
         <div class="service-slide">
             <ul>
-                <li><a href="#" class="active">Laporan</a></li>
-                <li><a href="">Progress</a></li>
+                <li><a href="#" class="active">Data Diri</a></li>
+                <li><a href="">Pendidikan</a></li>
                 <li><a href="">Dokumen</a></li>
-                <li><a href="">Galeri</a></li>
+                <li><a href="">Bank</a></li>
+                <li><a href="">Preferensi</a></li>
             </ul>
         </div>
         <div class="slide-prev d-none"><i class="fa fa-angle-left"></i></div>
         <div class="slide-next"><i class="fa fa-angle-right"></i></div>
     </div>
     <!-- End BWallet Nav -->
-    
-    <!-- Start Bwallet Bank -->
-   <div class="container-fluid bisnis-detail-grafik bg-white pt20" id="dokumen-list">
-        <div class="row mb10" v-for="item in dokumenList">
-            <div class="col-3 text-center">
-                <img :src="item.images" :alt="item.title">
+
+
+
+    <!-- Start Profil Form -->
+    <div class="container-fluid bg-white pt20 pb20">
+        <div class="bank-akun">
+            <label for="" class="bold600">Nama Bank</label>
+            <div class="form-icon">
+                <select name="" id="" class="form-control">
+                    <option value="">Bank Central Asia</option>
+                    <option value="">BCA</option>
+                </select>
             </div>
-            <div class="col-7">
-               <h3 class="fs16">{{item.title}}</h3>
-               <p class="fs12">{{item.time}}</p>
+        </div>
+        <div class="bank-akun">
+            <label for="" class="bold600">Kantor Cabang</label>
+            <div class="form-icon">
+                <input type="text" class="form-control">
             </div>
-            <div class="col-2 text-right fs20 bold600 download-bisnis-dokumen">
-                <i class="fa fa-ellipsis-h dblue"></i>
-             </div>
+        </div>
+        <div class="bank-akun">
+            <label for="" class="bold600">Nama Pemilik Rekening</label>
+            <div class="form-icon">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="bank-akun">
+            <label for="" class="bold600">Nomor Rekening</label>
+            <div class="form-icon">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn biz-default btn-full disable">Simpan</button>
+            </div>
         </div>
     </div>
-    <!-- End Bwallet Bank -->
-
-
-    <div class="biz-overlay bisnisdokumen-pop-filter d-none">
-            <div class="biz-overlay-modal modal-btm-min70">
-                <div class="biz-overlay-head close-modal">
-                    <img class="img-fluid" src="../images/closemodal.png" alt="">
-                </div>
-                <div class="biz-overlay-body">
-                    <div class="row">
-                        <div class="col-12">
-                            Download Dokumen
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Investasi Pop up -->
-
+    <!-- End Profil Form -->
     <script src="../../bundle/main.bundle.js"></script>
 </body>
 </html>

@@ -124,6 +124,14 @@ a.red, .red
     padding-top:10px !important
 .pt20
     padding-top:20px !important
+.pr10
+    padding-right:10px !important
+.pr20
+    padding-right:20px !important
+.pl10
+    padding-left:10px !important
+.pl20
+    padding-left:20px !important
 .pb10
     padding-bottom:10px !important
 .pb20
@@ -177,6 +185,17 @@ a.red, .red
     &:disabled
         background-color: #e9ecef
         opacity: 1
+.form-grup
+    .has-error
+        display: none
+        color: #DA3434
+    &.form-error
+        .form-control
+            border: 1px solid #DA3434
+        .has-error
+            display: block
+            font-size: 12px
+    
 .form-control[readonly]
     background-color: #e9ecef
     opacity: 1
@@ -197,6 +216,8 @@ a.red, .red
     &.biz-default, a.biz-default
         color: #fff
         @include btn-primary
+        &.disable
+            background: #5E82B8
     &.biz-secondary, a.biz-secondary
         @include btn-secondary
     &.btn-center
@@ -205,6 +226,91 @@ a.red, .red
     &.btn-full
         width: 100%
         display: block
+
+
+
+.form-radio
+    display: block
+    position: relative
+    padding-left: 35px
+    margin-bottom: 12px
+    cursor: pointer
+    user-select: none
+    input
+        position: absolute
+        opacity: 0
+        cursor: pointer
+        &:checked 
+            ~ .radio-checkmark
+                background: rgb(48,75,130)
+                background: linear-gradient(180deg, rgba(48,75,130,1) 0%, rgba(94,130,184,1) 80%)
+                &:after
+                    display: block
+    .radio-checkmark
+        &:after
+            top: 5px
+            left: 5px
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background: white
+            
+.radio-checkmark
+    position: absolute
+    top: 0
+    left: 0
+    height: 20px
+    width: 20px
+    background-color: #eee
+    border-radius: 50%
+    &:after
+        content: ""
+        position: absolute
+        display: none
+
+
+.form-checkbox
+    display: block
+    position: relative
+    padding-left: 35px
+    margin-bottom: 12px
+    cursor: pointer
+    user-select: none
+    input
+        position: absolute
+        opacity: 0
+        cursor: pointer
+        &:checked 
+            ~ .checkbox-checkmark
+                background: rgb(48,75,130)
+                background: linear-gradient(360deg, rgba(48,75,130,1) 0%, rgba(94,130,184,1) 80%)
+                &:after
+                    display: block
+    .checkbox-checkmark
+        &:after
+            left: 8px
+            top: 4px
+            width: 5px
+            height: 10px
+            border: solid white
+            border-width: 0 3px 3px 0
+            transform: rotate(45deg)
+.checkbox-checkmark
+    position: absolute
+    top: 0
+    left: 0
+    height: 20px
+    width: 20px
+    background-color: #eee
+    &:after
+        content: ""
+        position: absolute
+        display: none
+
+        
+        
+
+
 
 .biz-card-full
      @include card-default
@@ -497,3 +603,27 @@ a.red, .red
         width: 18px
         margin-right: 5px
         margin-bottom: 5px
+
+.floating-apps
+    position: fixed
+    bottom: 0
+    width: 100%
+    background-color: #648DE1
+    color: #ffffff
+    padding: 10px
+    overflow: hidden
+    .floating-close
+        float: left
+        width: 20px
+        line-height: 40px
+    .floating-mid
+        .img-app
+            float: left
+            width: 30px
+            padding-right: 5px
+        .text-app
+            float: left
+            width: 160px
+    .floating-btn
+        float: right
+        width: 80px

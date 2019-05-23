@@ -320,6 +320,63 @@ $(document).ready(function(){
     $('.galeri-photo').click(function(e){
         $(".overlay-galeri").removeClass("d-none")
     })
+    $('.kirim-token').click(function(e){
+        $(".pas-lama").addClass('d-none')
+        $(".ganti-pass").removeClass("d-none")
+    })
+
+    $(".simpan-password").click(function(){
+        $(".pass-baru").removeClass('d-none');
+        $(".ganti-pass").addClass("d-none");
+        $(".login-lama").addClass("d-none");
+    })
+
+    $(".simpan-password").click(function(){
+        $(".pass-baru").removeClass('d-none');
+        $(".ganti-pass").addClass("d-none");
+        $(".login-lama").addClass("d-none");
+    })
+
+    $(".form-grup input").keydown(function(e){
+        
+        if($(this).val().length == 0){
+            $(this).parents(".form-grup").addClass('form-error')
+        }
+    })
+
+
+    $(".daftar-sekarang").click(function(e){
+        e.preventDefault()
+        $('.regiter-main').addClass('d-none')
+        $(".register-berhasil").removeClass('d-none')
+    })
+
+    $(".download-bisnis-dokumen").click(function(e){
+        e.preventDefault()
+        $('.bisnisdokumen-pop-filter').removeClass('d-none')
+    })
+
+    $(".onboardpreferensi").click(function(e){
+        e.preventDefault()
+        $('.onboardpreferensi-pop-filter').removeClass('d-none')
+    })
+
+    $(".onboard-status").click(function(e){
+        e.preventDefault()
+        $('.status-pop-filter').removeClass('d-none')
+    })
+
+    $(".onboard-kewarganegaraan").click(function(e){
+        e.preventDefault()
+        $('.kewarganegaraan-pop-filter').removeClass('d-none')
+    })
+
+    $(".onboard-provinsi").click(function(e){
+        e.preventDefault()
+        $('.provinsi-pop-filter').removeClass('d-none')
+    })
+
+    
 
 
     

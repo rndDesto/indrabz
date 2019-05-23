@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../bundle/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-white">
+    <!-- Start Header -->
+    <header id="temp-header">
+        <cmp-header></cmp-header>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Nav Service -->
+    <div id="nav-menu">
+        <cmp-navservice></cmp-navservice>
+    </div>
+    <!-- Start Nav Service -->
+
+    <!-- Start Loggedin Service -->
+    <div id="nav-logged-in">
+        <cmp-navloggedin></cmp-navloggedin>
+    </div>
+    <!-- Start Loggedin Service -->
+
+
+    <!-- Start login cap -->
+    <div class="container-fluid register-cap regiter-main">
+        <div class="row">
+            <div class="col-12">
+                <h2>Daftar Sekarang</h2>
+                <p class="fs14">Sudah punya akun Bizhare? <span class="dblue">Masuk</span> </p>
+            </div>
+        </div>
+    </div>
+    <!-- End login cap -->
+
+    <!-- Start Profil Form -->
+    <div class="container-fluid pt20 pb20 regiter-main">
+        <div class="register-akun form-grup">
+            <label for="">Nama Depan</label>
+            <div class="form-icon form-icon-right">
+                <input type="text" class="form-control" placeholder="contoh: john">
+            </div>
+            <p class="has-error">Nama Depan Wajib Diisi</p>
+        </div>
+        <div class="register-akun form-grup">
+            <label for="">Nama Belakang</label>
+            <div class="form-icon form-icon-right">
+                <input type="text" class="form-control" placeholder="contoh: doe">
+            </div>
+            <p class="has-error">Nama belakang Wajib Diisi</p>
+        </div>
+        <div class="register-akun form-grup">
+            <label for="">Email</label>
+            <div class="form-icon form-icon-right">
+                <input type="text" class="form-control" placeholder="contoh: john.doe@gmail.com">
+            </div>
+            <p class="has-error">Email Wajib Diisi</p>
+        </div>
+        <div class="register-akun form-grup">
+            <label for="">Nomor Ponsel</label>
+            <div class="form-icon form-icon-right">
+                <input type="text" class="form-control" placeholder="contoh: 081388472643">
+            </div>
+            <p class="has-error">Nomor Telephone Wajib Diisi</p>
+        </div>
+        <div class="register-akun form-grup">
+            <label for="">Kata Sandi</label>
+            <div class="form-icon form-icon-right">
+                <input type="password" class="form-control" placeholder="Masukan Kata Sandi">
+                <i class="fa fa-eye"></i>
+            </div>
+            <p class="has-error">Password Wajib Diisi</p>
+            <p class="gray fs12">Minimal 7 karakter dengan huruf dan angka </p>
+        </div>
+
+        <div class="row mt20">
+            <div class="col-12">
+                <button class="btn biz-default btn-full daftar-sekarang">Daftar Sekarang</button>
+            </div>
+            <div class="col-12 mt10">
+                <p class="fs12 gray">Dengan menekan tombol 'Daftar Sekarang’, Anda telah menyetujui <span class="dblue">Syarat Ketentuan</span> dan <span class="dblue">Kebijakan Privasi</span> yang berlaku.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Profil Form -->
+
+    <!-- Start Register Berhasil-->
+    <div class="container-fluid register-cap register-berhasil d-none">
+        <div class="row">
+            <div class="col-12">
+                <h2>Pendaftaran Berhasil</h2>
+                <p>Untuk melanjutkan pendaftaran, silakan klik link aktivasi yang telah dikirimkan ke email adixbizhare@gmail.com</p>
+            </div>
+            <div class="col-12 mt20">
+                Belum menerima email aktivasi? <span class="dblue">Kirim ulang</span>
+            </div>
+        </div>
+    </div>
+    <!-- End Register Berhasil-->
+
+    <script src="../../bundle/main.bundle.js"></script>
+</body>
+</html>
