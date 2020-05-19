@@ -11,6 +11,7 @@ import './js/investasi';
 import './js/bisnis';
 import './js/swiper';
 import './contohJquery';
+console.log("mantap")
 // import * as getNameExport from './contohExport';
 // import warnaBody from './fungsiJquery';
 // const getNameRequire = require('./contohRequire');
